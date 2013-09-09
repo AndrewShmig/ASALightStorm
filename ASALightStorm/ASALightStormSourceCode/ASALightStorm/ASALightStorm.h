@@ -62,3 +62,11 @@
 // -- Stickers -- //
 @interface ASALightStorm (Stickers)
 @end
+
+// -- Proxy -- //
+@interface ASALightStorm (Proxy)
+@end
+
+// -- Tor -- //
+@interface ASALightStorm (Tor)
+@end
