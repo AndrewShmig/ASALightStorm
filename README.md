@@ -4,6 +4,8 @@ ASALightStorm
 
 Powerful & flexible iOS browser component based on UIWebView
 
+Response to [Opera Coast Browser](http://habrahabr.ru/company/opera/blog/193078/).
+
 
 #License
 Copyright (c) 2013 Andrew Shmig
