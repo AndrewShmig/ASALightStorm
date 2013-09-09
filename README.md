@@ -1,7 +1,9 @@
 ASALightStorm
 =============
 
-Powerful & flexible browser component based on UIWebView
+
+Powerful & flexible iOS browser component based on UIWebView
+
 
 #License
 Copyright (c) 2013 Andrew Shmig
