@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A9A0100A5F348E0D6E2F4E6 /* ASALightStorm.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0D8BBB78D64A87E62463 /* ASALightStorm.m */; };
+		1A9A0167DDBA3CEF52C10F51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0961D5A3D09C74F3F551 /* main.m */; };
+		1A9A0197890E4EC0D9565148 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A018636A06F6A9BB6C2E6 /* Foundation.framework */; };
+		1A9A039A57E682CB3543DE61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0A61BEA4A73B3B1C7EE5 /* InfoPlist.strings */; };
+		1A9A050146581539EE71F2D4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A07FB1458A6B8E637501F /* Default@2x.png */; };
+		1A9A09A910DCA7055AD73877 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A010ED508393CA804329E /* CoreGraphics.framework */; };
+		1A9A0A6293257F63900B9ACB /* ASAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A05CF4021F74AD0161C85 /* ASAViewController.m */; };
+		1A9A0A7BC0255D5A2AF7FD08 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0870F6CB0A3DF8E9CCD7 /* Default.png */; };
+		1A9A0B04B51B31392ED88699 /* ASAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A060A00A8A7E97E1F4D5F /* ASAViewController.xib */; };
+		1A9A0BBDC945A3482BFEA553 /* ASAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A008528F4013C19336FFD /* ASAAppDelegate.m */; };
+		1A9A0C5EC6FB04C1000591E4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0326B28F1CFF90423B10 /* Default-568h@2x.png */; };
+		1A9A0D38ED02F451A5EA9EC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A01A481264EC57E5F1437 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A9A008528F4013C19336FFD /* ASAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASAAppDelegate.m; sourceTree = "<group>"; };
+		1A9A010ED508393CA804329E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1A9A013012CB466876A32354 /* ASAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAAppDelegate.h; sourceTree = "<group>"; };
+		1A9A018636A06F6A9BB6C2E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A9A01A481264EC57E5F1437 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1A9A0326B28F1CFF90423B10 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1A9A03438024CD60C0935FEE /* ASAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAViewController.h; sourceTree = "<group>"; };
+		1A9A05CA1CEB02FF083D3F80 /* ASALightStorm-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "ASALightStorm-Info.plist"; sourceTree = "<group>"; };
+		1A9A05CF4021F74AD0161C85 /* ASAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASAViewController.m; sourceTree = "<group>"; };
+		1A9A06FBFAD10F815F5D4CCD /* ASALightStorm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASALightStorm-Prefix.pch"; sourceTree = "<group>"; };
+		1A9A07FB1458A6B8E637501F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1A9A0870F6CB0A3DF8E9CCD7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1A9A0961D5A3D09C74F3F551 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A9A0A1113F02D42905162DD /* ASALightStorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASALightStorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A9A0A970C1784CC69306349 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ASAViewController.xib; sourceTree = "<group>"; };
+		1A9A0D8BBB78D64A87E62463 /* ASALightStorm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASALightStorm.m; sourceTree = "<group>"; };
+		1A9A0F066D850D4039123BDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A9A0FBB954EA9FC19788C04 /* ASALightStorm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASALightStorm.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A9A06260B4692B220546298 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A9A0D38ED02F451A5EA9EC1 /* UIKit.framework in Frameworks */,
+				1A9A0197890E4EC0D9565148 /* Foundation.framework in Frameworks */,
+				1A9A09A910DCA7055AD73877 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A9A017F2DF8A28FDC31A0FA = {
+			isa = PBXGroup;
+			children = (
+				1A9A068249A3B2B2859D7977 /* Products */,
+				1A9A08BCCD2C2CDDD8429300 /* Frameworks */,
+				1A9A06F5BD0A1EC01724B31E /* ASALightStorm */,
+				1A9A054443391BAC4426C1E3 /* ASALightStormSourceCode */,
+			);
+			sourceTree = "<group>";
+		};
+		1A9A054443391BAC4426C1E3 /* ASALightStormSourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A0A88151C58FCE7D055B9 /* ASALightStorm */,
+			);
+			path = ASALightStormSourceCode;
+			sourceTree = "<group>";
+		};
+		1A9A068249A3B2B2859D7977 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A0A1113F02D42905162DD /* ASALightStorm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A9A06F5BD0A1EC01724B31E /* ASALightStorm */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A0B6C427EEA35E4C85ADA /* Supporting Files */,
+				1A9A013012CB466876A32354 /* ASAAppDelegate.h */,
+				1A9A008528F4013C19336FFD /* ASAAppDelegate.m */,
+				1A9A03438024CD60C0935FEE /* ASAViewController.h */,
+				1A9A05CF4021F74AD0161C85 /* ASAViewController.m */,
+				1A9A060A00A8A7E97E1F4D5F /* ASAViewController.xib */,
+			);
+			path = ASALightStorm;
+			sourceTree = "<group>";
+		};
+		1A9A08BCCD2C2CDDD8429300 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A01A481264EC57E5F1437 /* UIKit.framework */,
+				1A9A018636A06F6A9BB6C2E6 /* Foundation.framework */,
+				1A9A010ED508393CA804329E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A9A0A88151C58FCE7D055B9 /* ASALightStorm */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A0D8BBB78D64A87E62463 /* ASALightStorm.m */,
+				1A9A0FBB954EA9FC19788C04 /* ASALightStorm.h */,
+			);
+			path = ASALightStorm;
+			sourceTree = "<group>";
+		};
+		1A9A0B6C427EEA35E4C85ADA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A05CA1CEB02FF083D3F80 /* ASALightStorm-Info.plist */,
+				1A9A0A61BEA4A73B3B1C7EE5 /* InfoPlist.strings */,
+				1A9A0961D5A3D09C74F3F551 /* main.m */,
+				1A9A06FBFAD10F815F5D4CCD /* ASALightStorm-Prefix.pch */,
+				1A9A0870F6CB0A3DF8E9CCD7 /* Default.png */,
+				1A9A07FB1458A6B8E637501F /* Default@2x.png */,
+				1A9A0326B28F1CFF90423B10 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A9A0A9850BFEFF536BAE1AF /* ASALightStorm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A9A081038C196C3C1931648 /* Build configuration list for PBXNativeTarget "ASALightStorm" */;
+			buildPhases = (
+				1A9A08D60E846886A2865BAE /* Sources */,
+				1A9A06260B4692B220546298 /* Frameworks */,
+				1A9A0E20E0E69244B9DC9910 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ASALightStorm;
+			productName = ASALightStorm;
+			productReference = 1A9A0A1113F02D42905162DD /* ASALightStorm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A9A0660823AD2948BF7FB92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = AndrewShmig;
+			};
+			buildConfigurationList = 1A9A02218A1E6B2BDCDA71A0 /* Build configuration list for PBXProject "ASALightStorm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1A9A017F2DF8A28FDC31A0FA;
+			productRefGroup = 1A9A068249A3B2B2859D7977 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A9A0A9850BFEFF536BAE1AF /* ASALightStorm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A9A0E20E0E69244B9DC9910 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A9A039A57E682CB3543DE61 /* InfoPlist.strings in Resources */,
+				1A9A0A7BC0255D5A2AF7FD08 /* Default.png in Resources */,
+				1A9A050146581539EE71F2D4 /* Default@2x.png in Resources */,
+				1A9A0C5EC6FB04C1000591E4 /* Default-568h@2x.png in Resources */,
+				1A9A0B04B51B31392ED88699 /* ASAViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A9A08D60E846886A2865BAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A9A0167DDBA3CEF52C10F51 /* main.m in Sources */,
+				1A9A0BBDC945A3482BFEA553 /* ASAAppDelegate.m in Sources */,
+				1A9A0A6293257F63900B9ACB /* ASAViewController.m in Sources */,
+				1A9A0100A5F348E0D6E2F4E6 /* ASALightStorm.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1A9A060A00A8A7E97E1F4D5F /* ASAViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A9A0A970C1784CC69306349 /* en */,
+			);
+			name = ASAViewController.xib;
+			sourceTree = "<group>";
+		};
+		1A9A0A61BEA4A73B3B1C7EE5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A9A0F066D850D4039123BDF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A9A020A41912DF3976C0D2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1A9A0217058225A11DAC929C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A9A064D145FF7CED9E8EB15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASALightStorm/ASALightStorm-Prefix.pch";
+				INFOPLIST_FILE = "ASALightStorm/ASALightStorm-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1A9A065C3D70A5A56B7C62CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASALightStorm/ASALightStorm-Prefix.pch";
+				INFOPLIST_FILE = "ASALightStorm/ASALightStorm-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A9A02218A1E6B2BDCDA71A0 /* Build configuration list for PBXProject "ASALightStorm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A9A0217058225A11DAC929C /* Release */,
+				1A9A020A41912DF3976C0D2A /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A9A081038C196C3C1931648 /* Build configuration list for PBXNativeTarget "ASALightStorm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A9A064D145FF7CED9E8EB15 /* Release */,
+				1A9A065C3D70A5A56B7C62CE /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A9A0660823AD2948BF7FB92 /* Project object */;
+}

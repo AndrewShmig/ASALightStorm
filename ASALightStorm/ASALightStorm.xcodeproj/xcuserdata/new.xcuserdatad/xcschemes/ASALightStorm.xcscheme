@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1A9A0A9850BFEFF536BAE1AF"
+               BuildableName = "ASALightStorm.app"
+               BlueprintName = "ASALightStorm"
+               ReferencedContainer = "container:ASALightStorm.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1A9A0A9850BFEFF536BAE1AF"
+            BuildableName = "ASALightStorm.app"
+            BlueprintName = "ASALightStorm"
+            ReferencedContainer = "container:ASALightStorm.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
