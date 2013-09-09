@@ -70,3 +70,7 @@
 // -- Tor -- //
 @interface ASALightStorm (Tor)
 @end
+
+// -- Downloads -- //
+@interface ASALightStorm (Downloads)
+@end
