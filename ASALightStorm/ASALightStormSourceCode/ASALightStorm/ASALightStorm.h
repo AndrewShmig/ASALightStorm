@@ -74,3 +74,7 @@
 // -- Downloads -- //
 @interface ASALightStorm (Downloads)
 @end
+
+// -- Browse offline -- //
+@interface ASALightStorm (BrowseOffline)
+@end
