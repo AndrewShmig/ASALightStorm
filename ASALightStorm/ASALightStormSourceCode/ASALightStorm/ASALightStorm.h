@@ -55,6 +55,10 @@
 @interface ASALightStorm (Filters)
 @end
 
-// -- AdStormBlocker -- //
-@interface ASALightStorm (AdStormBlocker)
+// -- AdBlocker -- //
+@interface ASALightStorm (AdBlocker)
+@end
+
+// -- Stickers -- //
+@interface ASALightStorm (Stickers)
 @end
