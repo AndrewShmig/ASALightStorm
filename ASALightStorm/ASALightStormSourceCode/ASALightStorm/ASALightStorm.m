@@ -26,9 +26,23 @@
 //
 #import "ASALightStorm.h"
 
+// -- Private methods -- //
+@interface ASALightStorm (Private)
+@end
 
+// -- Public methods -- //
 @implementation ASALightStorm
-{
 
++ (instancetype)sharedStorm
+{
+    static ASALightStorm *_sharedStorm = nil;
+    dispatch_once_t predicate;
+
+    dispatch_once(&predicate, ^{
+        _sharedStorm = [[ASALightStorm alloc] init];
+    });
+
+    return _sharedStorm;
 }
+
 @end

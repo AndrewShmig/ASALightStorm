@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2057" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="AdBlock" syncable="YES">
+        <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="adblocks" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Bookmark" syncable="YES">
+        <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="bookmarks" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="BrowseOffline" syncable="YES">
+        <relationship name="history" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="History" inverseName="offlineVersion" inverseEntity="History" syncable="YES"/>
+    </entity>
+    <entity name="Cache" syncable="YES">
+        <relationship name="history" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="History" inverseName="cache" inverseEntity="History" syncable="YES"/>
+    </entity>
+    <entity name="Download" syncable="YES">
+        <relationship name="history" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="History" inverseName="downloads" inverseEntity="History" syncable="YES"/>
+    </entity>
+    <entity name="Filter" syncable="YES">
+        <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="filters" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="History" syncable="YES">
+        <relationship name="cache" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="Cache" inverseName="history" inverseEntity="Cache" syncable="YES"/>
+        <relationship name="downloads" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Download" inverseName="history" inverseEntity="Download" syncable="YES"/>
+        <relationship name="offlineVersion" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="BrowseOffline" inverseName="history" inverseEntity="BrowseOffline" syncable="YES"/>
+        <relationship name="stickers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sticker" inverseName="history" inverseEntity="Sticker" syncable="YES"/>
+        <relationship name="tab" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Tab" inverseName="history" inverseEntity="Tab" syncable="YES"/>
+        <relationship name="userData" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="UserData" inverseName="history" inverseEntity="UserData" syncable="YES"/>
+    </entity>
+    <entity name="Proxy" syncable="YES">
+        <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="proxies" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Sticker" syncable="YES">
+        <relationship name="history" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="History" inverseName="stickers" inverseEntity="History" syncable="YES"/>
+    </entity>
+    <entity name="Tab" syncable="YES">
+        <relationship name="history" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="History" inverseName="tab" inverseEntity="History" syncable="YES"/>
+        <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="tabs" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" syncable="YES">
+        <relationship name="adblocks" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="AdBlock" inverseName="user" inverseEntity="AdBlock" syncable="YES"/>
+        <relationship name="bookmarks" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Bookmark" inverseName="user" inverseEntity="Bookmark" syncable="YES"/>
+        <relationship name="filters" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Filter" inverseName="user" inverseEntity="Filter" syncable="YES"/>
+        <relationship name="proxies" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Proxy" inverseName="user" inverseEntity="Proxy" syncable="YES"/>
+        <relationship name="tabs" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Tab" inverseName="user" inverseEntity="Tab" syncable="YES"/>
+    </entity>
+    <entity name="UserData" syncable="YES">
+        <relationship name="history" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="History" inverseName="userData" inverseEntity="History" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Tab" positionX="252" positionY="305" width="128" height="73"/>
+        <element name="Bookmark" positionX="450" positionY="401" width="128" height="58"/>
+        <element name="History" positionX="268" positionY="117" width="128" height="133"/>
+        <element name="UserData" positionX="277" positionY="9" width="128" height="58"/>
+        <element name="Cache" positionX="475" positionY="0" width="128" height="58"/>
+        <element name="Filter" positionX="-56" positionY="315" width="128" height="58"/>
+        <element name="AdBlock" positionX="-54" positionY="504" width="128" height="58"/>
+        <element name="Sticker" positionX="529" positionY="225" width="128" height="58"/>
+        <element name="Proxy" positionX="448" positionY="482" width="128" height="58"/>
+        <element name="Download" positionX="511" positionY="126" width="128" height="58"/>
+        <element name="BrowseOffline" positionX="52" positionY="27" width="128" height="58"/>
+        <element name="User" positionX="205" positionY="423" width="128" height="118"/>
+    </elements>
+</model>

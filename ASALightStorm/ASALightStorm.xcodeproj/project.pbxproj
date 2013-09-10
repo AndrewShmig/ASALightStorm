@@ -19,6 +19,7 @@
 		1A9A0BBDC945A3482BFEA553 /* ASAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A008528F4013C19336FFD /* ASAAppDelegate.m */; };
 		1A9A0C5EC6FB04C1000591E4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0326B28F1CFF90423B10 /* Default-568h@2x.png */; };
 		1A9A0D38ED02F451A5EA9EC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A01A481264EC57E5F1437 /* UIKit.framework */; };
+		D577C1C217DF7A5D0098826E /* LightStormDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D577C1C017DF7A5D0098826E /* LightStormDataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		1A9A0D8BBB78D64A87E62463 /* ASALightStorm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASALightStorm.m; sourceTree = "<group>"; };
 		1A9A0F066D850D4039123BDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A9A0FBB954EA9FC19788C04 /* ASALightStorm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASALightStorm.h; sourceTree = "<group>"; };
+		D577C1C117DF7A5D0098826E /* LightStormDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LightStormDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +68,19 @@
 			);
 			sourceTree = "<group>";
 		};
+		1A9A01A9591C535504D966D7 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				D577C1C017DF7A5D0098826E /* LightStormDataModel.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 		1A9A054443391BAC4426C1E3 /* ASALightStormSourceCode */ = {
 			isa = PBXGroup;
 			children = (
 				1A9A0A88151C58FCE7D055B9 /* ASALightStorm */,
+				1A9A01A9591C535504D966D7 /* DataModel */,
 			);
 			path = ASALightStormSourceCode;
 			sourceTree = "<group>";
@@ -197,6 +208,7 @@
 				1A9A0BBDC945A3482BFEA553 /* ASAAppDelegate.m in Sources */,
 				1A9A0A6293257F63900B9ACB /* ASAViewController.m in Sources */,
 				1A9A0100A5F348E0D6E2F4E6 /* ASALightStorm.m in Sources */,
+				D577C1C217DF7A5D0098826E /* LightStormDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,8 +331,22 @@
 				1A9A065C3D70A5A56B7C62CE /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D577C1C017DF7A5D0098826E /* LightStormDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D577C1C117DF7A5D0098826E /* LightStormDataModel.xcdatamodel */,
+			);
+			currentVersion = D577C1C117DF7A5D0098826E /* LightStormDataModel.xcdatamodel */;
+			path = LightStormDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1A9A0660823AD2948BF7FB92 /* Project object */;
 }

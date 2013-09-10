@@ -29,10 +29,15 @@
 
 // -- Main -- //
 @interface ASALightStorm : NSObject
++ (instancetype)sharedStorm;
+@end
+
+// -- User -- //
+@interface ASALightStorm (User)
 @end
 
 // -- Bookmarks -- //
-@interface ASALightStorm (Bookmarks)
+@interface ASALightStorm (Bookmark)
 @end
 
 // -- History -- //
@@ -40,7 +45,7 @@
 @end
 
 // -- Tabs -- //
-@interface ASALightStorm (Tabs)
+@interface ASALightStorm (Tab)
 @end
 
 // -- Passwords & Logins -- //
@@ -52,15 +57,15 @@
 @end
 
 // -- Filters -- //
-@interface ASALightStorm (Filters)
+@interface ASALightStorm (Filter)
 @end
 
-// -- AdBlocker -- //
-@interface ASALightStorm (AdBlocker)
+// -- AdBlock -- //
+@interface ASALightStorm (AdBlock)
 @end
 
 // -- Stickers -- //
-@interface ASALightStorm (Stickers)
+@interface ASALightStorm (Sticker)
 @end
 
 // -- Proxy -- //
@@ -72,7 +77,7 @@
 @end
 
 // -- Downloads -- //
-@interface ASALightStorm (Downloads)
+@interface ASALightStorm (Download)
 @end
 
 // -- Browse offline -- //
