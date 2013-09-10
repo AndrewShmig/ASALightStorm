@@ -37,6 +37,9 @@
         <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="tabs" inverseEntity="User" syncable="YES"/>
     </entity>
     <entity name="User" syncable="YES">
+        <attribute name="createdAt" attributeType="Date" syncable="YES"/>
+        <attribute name="login" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="adblocks" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="AdBlock" inverseName="user" inverseEntity="AdBlock" syncable="YES"/>
         <relationship name="bookmarks" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Bookmark" inverseName="user" inverseEntity="Bookmark" syncable="YES"/>
         <relationship name="filters" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Filter" inverseName="user" inverseEntity="Filter" syncable="YES"/>
@@ -47,17 +50,17 @@
         <relationship name="history" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="History" inverseName="userData" inverseEntity="History" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Tab" positionX="252" positionY="305" width="128" height="73"/>
-        <element name="Bookmark" positionX="450" positionY="401" width="128" height="58"/>
-        <element name="History" positionX="268" positionY="117" width="128" height="133"/>
-        <element name="UserData" positionX="277" positionY="9" width="128" height="58"/>
-        <element name="Cache" positionX="475" positionY="0" width="128" height="58"/>
-        <element name="Filter" positionX="-56" positionY="315" width="128" height="58"/>
         <element name="AdBlock" positionX="-54" positionY="504" width="128" height="58"/>
-        <element name="Sticker" positionX="529" positionY="225" width="128" height="58"/>
-        <element name="Proxy" positionX="448" positionY="482" width="128" height="58"/>
-        <element name="Download" positionX="511" positionY="126" width="128" height="58"/>
+        <element name="Bookmark" positionX="450" positionY="401" width="128" height="58"/>
         <element name="BrowseOffline" positionX="52" positionY="27" width="128" height="58"/>
-        <element name="User" positionX="205" positionY="423" width="128" height="118"/>
+        <element name="Cache" positionX="475" positionY="0" width="128" height="58"/>
+        <element name="Download" positionX="511" positionY="126" width="128" height="58"/>
+        <element name="Filter" positionX="-56" positionY="315" width="128" height="58"/>
+        <element name="History" positionX="268" positionY="117" width="128" height="133"/>
+        <element name="Proxy" positionX="466" positionY="563" width="128" height="58"/>
+        <element name="Sticker" positionX="529" positionY="225" width="128" height="58"/>
+        <element name="Tab" positionX="252" positionY="305" width="128" height="73"/>
+        <element name="User" positionX="205" positionY="423" width="128" height="163"/>
+        <element name="UserData" positionX="277" positionY="9" width="128" height="58"/>
     </elements>
 </model>
