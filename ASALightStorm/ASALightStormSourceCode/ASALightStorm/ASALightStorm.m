@@ -32,7 +32,14 @@
 
 // -- Public methods -- //
 @implementation ASALightStorm
+{
+//    Core data stack
+    NSManagedObjectModel *_stormManagedObjectModel;
+    NSManagedObjectContext *_stormManagedObjectContext;
+    NSPersistentStoreCoordinator *_stormPersistentStoreCoordinator;
+}
 
+// -- Main -- //
 + (instancetype)sharedStorm
 {
     static ASALightStorm *_sharedStorm = nil;
@@ -43,6 +50,57 @@
     });
 
     return _sharedStorm;
+}
+
+- (NSManagedObjectModel *)stormManagedObjectModel
+{
+//    TODO: storm managed object
+}
+
+- (NSPersistentStoreCoordinator *)stormPersistentStoreCoordinator
+{
+//    TODO: storm persistent store coordinator
+}
+
+- (NSManagedObjectContext *)stormManagedObjectContext
+{
+//    TODO: storm managed object context
+}
+
+// -- Profile -- //
+- (BOOL)Profile_createWithName:(NSString *)name
+{
+//    TODO: profile create with name
+}
+
+- (BOOL)Profile_destroyWithName:(NSString *)name
+{
+//    TODO: profile destroy with name
+}
+
+- (BOOL)Profile_destroyAll
+{
+//    TODO: profile destroy all
+}
+
+- (BOOL)Profile_activateWithName:(NSString *)name
+{
+//    TODO: profile activate with name
+}
+
+- (BOOL)Profile_active
+{
+//    TODO: profile active
+}
+
+- (NSUInteger)Profile_count
+{
+//    TODO: profile count
+}
+
+- (NSArray *)Profile_profiles
+{
+//    TODO: profile profiles
 }
 
 @end
