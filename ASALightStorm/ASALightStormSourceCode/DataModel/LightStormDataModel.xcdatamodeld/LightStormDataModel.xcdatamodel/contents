@@ -50,17 +50,17 @@
         <relationship name="userData" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="UserData" inverseName="history" inverseEntity="UserData" syncable="YES"/>
     </entity>
     <elements>
-        <element name="AdBlock" positionX="-54" positionY="504" width="128" height="58"/>
+        <element name="AdBlock" positionX="-54" positionY="468" width="128" height="58"/>
         <element name="Bookmark" positionX="466" positionY="419" width="128" height="58"/>
         <element name="BrowseOffline" positionX="9" positionY="158" width="128" height="58"/>
         <element name="Cache" positionX="459" positionY="131" width="128" height="58"/>
         <element name="Download" positionX="466" positionY="491" width="128" height="58"/>
-        <element name="Filter" positionX="-56" positionY="315" width="128" height="58"/>
-        <element name="WebPage" positionX="214" positionY="144" width="128" height="118"/>
+        <element name="Filter" positionX="-56" positionY="540" width="128" height="58"/>
         <element name="Proxy" positionX="466" positionY="563" width="128" height="58"/>
         <element name="Sticker" positionX="450" positionY="225" width="128" height="58"/>
         <element name="Tab" positionX="207" positionY="305" width="128" height="73"/>
         <element name="User" positionX="205" positionY="423" width="128" height="178"/>
-        <element name="UserData" positionX="189" positionY="18" width="128" height="58"/>
+        <element name="UserData" positionX="223" positionY="18" width="128" height="58"/>
+        <element name="WebPage" positionX="214" positionY="144" width="128" height="118"/>
     </elements>
 </model>
