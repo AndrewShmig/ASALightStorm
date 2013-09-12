@@ -34,13 +34,6 @@
 
 // -- Profile -- //
 @interface ASALightStorm (Profile)
-- (BOOL)Profile_createWithName:(NSString *)name;
-- (BOOL)Profile_destroyWithName:(NSString *)name;
-- (BOOL)Profile_destroyAll;
-- (BOOL)Profile_activateWithName:(NSString *)name;
-- (NSString *)Profile_active;
-- (NSUInteger)Profile_count;
-- (NSArray *)Profile_profiles;
 @end
 
 // -- Bookmarks -- //
@@ -49,10 +42,6 @@
 
 // -- History -- //
 @interface ASALightStorm (History)
-@end
-
-// -- Tabs -- //
-@interface ASALightStorm (Tab)
 @end
 
 // -- Passwords & Logins -- //
