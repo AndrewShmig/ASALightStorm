@@ -38,11 +38,8 @@
 - (BOOL)Profile_destroyWithName:(NSString *)name;
 - (BOOL)Profile_destroyAll;
 - (BOOL)Profile_activateWithName:(NSString *)name;
-
 - (NSString *)Profile_active;
-
 - (NSUInteger)Profile_count;
-
 - (NSArray *)Profile_profiles;
 @end
 
