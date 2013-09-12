@@ -38,7 +38,7 @@
         <relationship name="downloads" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Download" inverseName="profile" inverseEntity="Download" syncable="YES"/>
         <relationship name="filters" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Filter" inverseName="profile" inverseEntity="Filter" syncable="YES"/>
         <relationship name="proxies" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Proxy" inverseName="profile" inverseEntity="Proxy" syncable="YES"/>
-        <relationship name="tabs" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Tab" inverseName="profile" inverseEntity="Tab" syncable="YES"/>
+        <relationship name="webPages" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="WebPage" inverseName="profile" inverseEntity="WebPage" syncable="YES"/>
     </entity>
     <entity name="Proxy" syncable="YES">
         <relationship name="profile" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Profile" inverseName="proxies" inverseEntity="Profile" syncable="YES"/>
@@ -48,13 +48,6 @@
         <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="webPage" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="WebPage" inverseName="stickers" inverseEntity="WebPage" syncable="YES"/>
     </entity>
-    <entity name="Tab" syncable="YES">
-        <attribute name="createdAt" attributeType="Date" syncable="YES"/>
-        <attribute name="id" attributeType="String" syncable="YES"/>
-        <attribute name="isOpened" attributeType="Boolean" syncable="YES"/>
-        <relationship name="profile" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Profile" inverseName="tabs" inverseEntity="Profile" syncable="YES"/>
-        <relationship name="webPages" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="WebPage" inverseName="tab" inverseEntity="WebPage" syncable="YES"/>
-    </entity>
     <entity name="UserData" syncable="YES">
         <attribute name="fieldName" attributeType="String" syncable="YES"/>
         <attribute name="fieldValue" optional="YES" attributeType="String" syncable="YES"/>
@@ -63,23 +56,21 @@
     <entity name="WebPage" syncable="YES">
         <attribute name="createdAt" attributeType="Date" syncable="YES"/>
         <attribute name="url" attributeType="String" syncable="YES"/>
-        <relationship name="cache" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" syncable="YES"/>
+        <relationship name="profile" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Profile" inverseName="webPages" inverseEntity="Profile" syncable="YES"/>
         <relationship name="snapshots" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="OfflineSnapshot" inverseName="webPage" inverseEntity="OfflineSnapshot" syncable="YES"/>
         <relationship name="stickers" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Sticker" inverseName="webPage" inverseEntity="Sticker" syncable="YES"/>
-        <relationship name="tab" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Tab" inverseName="webPages" inverseEntity="Tab" syncable="YES"/>
         <relationship name="userData" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="UserData" inverseName="webPage" inverseEntity="UserData" syncable="YES"/>
     </entity>
     <elements>
-        <element name="AdBlock" positionX="-189" positionY="479" width="128" height="103"/>
-        <element name="Bookmark" positionX="574" positionY="432" width="128" height="118"/>
-        <element name="Download" positionX="504" positionY="284" width="128" height="118"/>
-        <element name="Filter" positionX="-191" positionY="594" width="128" height="88"/>
-        <element name="OfflineSnapshot" positionX="9" positionY="158" width="128" height="73"/>
-        <element name="Profile" positionX="9" positionY="533" width="128" height="178"/>
-        <element name="Proxy" positionX="448" positionY="639" width="128" height="58"/>
-        <element name="Sticker" positionX="7" positionY="252" width="128" height="88"/>
-        <element name="Tab" positionX="171" positionY="446" width="128" height="118"/>
-        <element name="UserData" positionX="504" positionY="164" width="128" height="88"/>
-        <element name="WebPage" positionX="214" positionY="144" width="128" height="148"/>
+        <element name="AdBlock" positionX="-270" positionY="545" width="128" height="103"/>
+        <element name="Bookmark" positionX="430" positionY="495" width="128" height="118"/>
+        <element name="Download" positionX="360" positionY="306" width="128" height="118"/>
+        <element name="Filter" positionX="-270" positionY="659" width="128" height="88"/>
+        <element name="OfflineSnapshot" positionX="25" positionY="224" width="128" height="73"/>
+        <element name="Profile" positionX="9" positionY="632" width="128" height="178"/>
+        <element name="Proxy" positionX="-270" positionY="761" width="128" height="58"/>
+        <element name="Sticker" positionX="-171" positionY="207" width="128" height="88"/>
+        <element name="UserData" positionX="-218" positionY="317" width="128" height="88"/>
+        <element name="WebPage" positionX="-18" positionY="371" width="128" height="133"/>
     </elements>
 </model>
