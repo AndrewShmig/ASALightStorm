@@ -1,5 +1,5 @@
 //
-// Created by AndrewShmig on 9/9/13.
+// Created by AndrewShmig on 9/14/13.
 //
 // Copyright (c) 2013 Andrew Shmig
 // 
@@ -27,20 +27,5 @@
 #import <Foundation/Foundation.h>
 
 
-@class ASALightStormProfile;
-
-
-// -- Main -- //
-@interface ASALightStorm : NSObject
-+ (instancetype)sharedStorm;
-@end
-
-// -- Profile -- //
-@interface ASALightStorm (Profile)
-- (ASALightStormProfile *)createProfileWithName:(NSString *)name andPassword:(NSString *)password;
-- (ASALightStormProfile *)createProfileWithName:(NSString *)name;
-- (BOOL)destroyProfileWithName:(NSString *)name andPassword:(NSString *)password;
-- (BOOL)destroyProfileWithName:(NSString *)name;
-- (BOOL)destroyAllProfiles;
-- (ASALightStormProfile *)loginWithProfileWithName:(NSString *)name andPassword:(NSString *)password;
+@interface ASALightStormProfile : NSObject
 @end

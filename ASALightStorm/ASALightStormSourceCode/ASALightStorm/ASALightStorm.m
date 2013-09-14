@@ -25,10 +25,8 @@
 // THE SOFTWARE.
 //
 #import "ASALightStorm.h"
+#import "ASALightStormProfile.h"
 
-// -- Private methods -- //
-@interface ASALightStorm (Private)
-@end
 
 // -- Public methods -- //
 @implementation ASALightStorm
@@ -39,7 +37,8 @@
     NSPersistentStoreCoordinator *_stormPersistentStoreCoordinator;
 }
 
-// -- Main -- //
+#pragma mark - Main
+
 + (instancetype)sharedStorm
 {
     static ASALightStorm *_sharedStorm = nil;
@@ -67,40 +66,37 @@
 //    TODO: storm managed object context
 }
 
-// -- Profile -- //
-- (BOOL)Profile_createWithName:(NSString *)name
+#pragma mark - Profile
+
+- (ASALightStormProfile *)createProfileWithName:(NSString *)name
+                                    andPassword:(NSString *)password
 {
-//    TODO: profile create with name
+//    TODO
 }
 
-- (BOOL)Profile_destroyWithName:(NSString *)name
+- (ASALightStormProfile *)createProfileWithName:(NSString *)name
 {
-//    TODO: profile destroy with name
+//    TODO
 }
 
-- (BOOL)Profile_destroyAll
+- (BOOL)destroyProfileWithName:(NSString *)name andPassword:(NSString *)password
 {
-//    TODO: profile destroy all
+//    TODO
 }
 
-- (BOOL)Profile_activateWithName:(NSString *)name
+- (BOOL)destroyProfileWithName:(NSString *)name
 {
-//    TODO: profile activate with name
+//    TODO
 }
 
-- (BOOL)Profile_active
+- (BOOL)destroyAllProfiles
 {
-//    TODO: profile active
+//    TODO
 }
 
-- (NSUInteger)Profile_count
+- (BOOL)loginWithProfileWithName:(NSString *)name
+                     andPassword:(NSString *)password
 {
-//    TODO: profile count
+//    TODO
 }
-
-- (NSArray *)Profile_profiles
-{
-//    TODO: profile profiles
-}
-
 @end
