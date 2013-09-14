@@ -1,5 +1,5 @@
 //
-//  Profile.h
+//  CDProfile.h
 //  ASALightStorm
 //
 //  Created by AndrewShmig on 9/14/13.
@@ -10,7 +10,7 @@
 #import <CoreData/CoreData.h>
 
 
-@interface Profile : NSManagedObject
+@interface CDProfile : NSManagedObject
 
 @property (nonatomic, retain) NSDate * createdAt;
 @property (nonatomic, retain) NSString * name;
@@ -23,7 +23,7 @@
 @property (nonatomic, retain) NSSet *tabs;
 @end
 
-@interface Profile (CoreDataGeneratedAccessors)
+@interface CDProfile (CoreDataGeneratedAccessors)
 
 - (void)addAdblocksObject:(NSManagedObject *)value;
 - (void)removeAdblocksObject:(NSManagedObject *)value;

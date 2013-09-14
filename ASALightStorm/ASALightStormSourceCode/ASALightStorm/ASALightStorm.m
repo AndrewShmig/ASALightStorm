@@ -24,13 +24,14 @@
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
 // THE SOFTWARE.
 //
+#import <CoreData/CoreData.h>
 #import "ASALightStorm.h"
 #import "ASALightStormProfile.h"
 
 
 // -- Public methods -- //
-@implementation ASALightStorm
-{
+@implementation ASALightStorm {
+
 //    Core data stack
     NSManagedObjectModel *_stormManagedObjectModel;
     NSManagedObjectContext *_stormManagedObjectContext;
@@ -39,64 +40,148 @@
 
 #pragma mark - Main
 
-+ (instancetype)sharedStorm
-{
++ (instancetype)sharedStorm {
+
     static ASALightStorm *_sharedStorm = nil;
     dispatch_once_t predicate;
 
-    dispatch_once(&predicate, ^{
+    dispatch_once(&predicate, ^
+    {
         _sharedStorm = [[ASALightStorm alloc] init];
     });
 
     return _sharedStorm;
 }
 
-- (NSManagedObjectModel *)stormManagedObjectModel
-{
-//    TODO: storm managed object
+- (BOOL)saveStormManagedObjectContext {
+
+    NSError *error = nil;
+
+    if (![[self stormManagedObjectContext] save:&error]) {
+
+        NSLog(@"==> Error while saving storm context: %@, %@", error, [error userInfo]);
+        return NO;
+    }
+
+    return YES;
 }
 
-- (NSPersistentStoreCoordinator *)stormPersistentStoreCoordinator
-{
-//    TODO: storm persistent store coordinator
+- (NSManagedObjectModel *)stormManagedObjectModel {
+
+    if (nil != _stormManagedObjectModel)
+        return _stormManagedObjectModel;
+
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"ASALightStorm"
+                                              withExtension:@"momd"];
+    _stormManagedObjectModel = [[NSManagedObjectModel alloc]
+                                                      initWithContentsOfURL:modelURL];
+
+    return _stormManagedObjectModel;
 }
 
-- (NSManagedObjectContext *)stormManagedObjectContext
-{
-//    TODO: storm managed object context
+- (NSPersistentStoreCoordinator *)stormPersistentStoreCoordinator {
+
+    if (nil != _stormPersistentStoreCoordinator)
+        return _stormPersistentStoreCoordinator;
+
+    NSURL *stormStore = [[[[NSFileManager defaultManager]
+                                          URLsForDirectory:NSDocumentDirectory
+                                                 inDomains:NSUserDomainMask]
+                                          lastObject]
+                                          URLByAppendingPathComponent:@"ASALightStorme.sqlite"];
+
+    _stormPersistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc]
+                                                                      initWithManagedObjectModel:[self stormManagedObjectModel]];
+
+    if (nil != _stormPersistentStoreCoordinator) {
+
+        NSError *error = nil;
+
+        if (![_stormPersistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
+                                                            configuration:nil
+                                                                      URL:stormStore
+                                                                  options:nil
+                                                                    error:&error]) {
+            NSLog(@"==> Error while adding persistent store: %@, %@", error, [error userInfo]);
+            abort();
+        }
+    }
+
+    return _stormPersistentStoreCoordinator;
+}
+
+- (NSManagedObjectContext *)stormManagedObjectContext {
+
+    if (nil != _stormManagedObjectContext)
+        return _stormManagedObjectContext;
+
+    NSPersistentStoreCoordinator *stormCoordinator = [self stormPersistentStoreCoordinator];
+    if (nil != stormCoordinator) {
+
+        _stormManagedObjectContext = [[NSManagedObjectContext alloc] init];
+        [_stormManagedObjectContext setPersistentStoreCoordinator:stormCoordinator];
+    }
+
+    return _stormManagedObjectContext;
 }
 
 #pragma mark - Profile
 
 - (ASALightStormProfile *)createProfileWithName:(NSString *)name
-                                    andPassword:(NSString *)password
-{
-//    TODO
+                                    andPassword:(NSString *)password {
+
+    ASALightStormProfile *newProfile = [[ASALightStormProfile alloc]
+                                                              initWithName:name
+                                                               andPassword:password];
+
+    return newProfile;
 }
 
-- (ASALightStormProfile *)createProfileWithName:(NSString *)name
-{
-//    TODO
+- (ASALightStormProfile *)createProfileWithName:(NSString *)name {
+
+    ASALightStormProfile *newProfile = [[ASALightStormProfile alloc]
+                                                              initWithName:name
+                                                               andPassword:@""];
+
+    return newProfile;
 }
 
-- (BOOL)destroyProfileWithName:(NSString *)name andPassword:(NSString *)password
-{
-//    TODO
+- (ASALightStormProfile *)loginWithProfileWithName:(NSString *)name
+                                       andPassword:(NSString *)password {
+
+//    TODO: loginWithProfileWithName:andPassword:
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc]
+                                                    initWithEntityName:@"CDProfile"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name = %@ AND passwordHash = %@",
+                                                              name,
+                                                              password];
+    [fetchRequest setPredicate:predicate];
+
+    NSArray *result = [[self stormManagedObjectContext]
+                             executeFetchRequest:fetchRequest
+                                           error:nil];
+
+//    no such name & password
+    if (0 == [result count])
+        return nil;
+
+//    name & password exist
+    return (ASALightStormProfile *) [result lastObject];
 }
 
-- (BOOL)destroyProfileWithName:(NSString *)name
-{
-//    TODO
+- (BOOL)destroyProfileWithName:(NSString *)name andPassword:(NSString *)password {
+
+//    TODO: destroyProfileWithName:andPassword:
 }
 
-- (BOOL)destroyAllProfiles
-{
-//    TODO
+- (BOOL)destroyProfileWithName:(NSString *)name {
+
+//    TODO: sestroyProfileWithName:
 }
 
-- (BOOL)loginWithProfileWithName:(NSString *)name
-                     andPassword:(NSString *)password
-{
-//    TODO
+- (BOOL)destroyAllProfiles {
+
+//    TODO: destroyAllProfiles
 }
+
 @end

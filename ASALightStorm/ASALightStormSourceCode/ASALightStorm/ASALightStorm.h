@@ -30,17 +30,28 @@
 @class ASALightStormProfile;
 
 
-// -- Main -- //
 @interface ASALightStorm : NSObject
+
+@property (nonatomic, strong, readonly) NSManagedObjectModel *stormManagedObjectModel;
+@property (nonatomic, strong, readonly) NSPersistentStoreCoordinator *stormPersistentStoreCoordinator;
+@property (nonatomic, strong, readonly) NSManagedObjectContext *stormManagedObjectContext;
+
 + (instancetype)sharedStorm;
+- (BOOL)saveStormManagedObjectContext;
+
 @end
 
-// -- Profile -- //
+
 @interface ASALightStorm (Profile)
-- (ASALightStormProfile *)createProfileWithName:(NSString *)name andPassword:(NSString *)password;
+
+- (ASALightStormProfile *)createProfileWithName:(NSString *)name
+                                    andPassword:(NSString *)password;
 - (ASALightStormProfile *)createProfileWithName:(NSString *)name;
-- (BOOL)destroyProfileWithName:(NSString *)name andPassword:(NSString *)password;
+- (ASALightStormProfile *)loginWithProfileWithName:(NSString *)name
+                                       andPassword:(NSString *)password;
+- (BOOL)destroyProfileWithName:(NSString *)name
+                   andPassword:(NSString *)password;
 - (BOOL)destroyProfileWithName:(NSString *)name;
 - (BOOL)destroyAllProfiles;
-- (ASALightStormProfile *)loginWithProfileWithName:(NSString *)name andPassword:(NSString *)password;
+
 @end

@@ -28,4 +28,8 @@
 
 
 @interface ASALightStormProfile : NSObject
+
+- (instancetype)initWithName:(NSString *)name
+                 andPassword:(NSString *)password;
+
 @end

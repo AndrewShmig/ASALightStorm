@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A9A0167DDBA3CEF52C10F51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0961D5A3D09C74F3F551 /* main.m */; };
 		1A9A0197890E4EC0D9565148 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A018636A06F6A9BB6C2E6 /* Foundation.framework */; };
-		1A9A0286A6344409D4F23138 /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A01C6F04A1D0758B80305 /* Profile.m */; };
+		1A9A0286A6344409D4F23138 /* CDProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A01C6F04A1D0758B80305 /* CDProfile.m */; };
 		1A9A039A57E682CB3543DE61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0A61BEA4A73B3B1C7EE5 /* InfoPlist.strings */; };
 		1A9A0427462184C3CF8F1587 /* LightStormDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A04AF18EBC379C62BFA0B /* LightStormDataModel.xcdatamodeld */; };
 		1A9A050146581539EE71F2D4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A07FB1458A6B8E637501F /* Default@2x.png */; };
@@ -19,6 +19,7 @@
 		1A9A0A7BC0255D5A2AF7FD08 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0870F6CB0A3DF8E9CCD7 /* Default.png */; };
 		1A9A0B04B51B31392ED88699 /* ASAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A060A00A8A7E97E1F4D5F /* ASAViewController.xib */; };
 		1A9A0BBDC945A3482BFEA553 /* ASAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A008528F4013C19336FFD /* ASAAppDelegate.m */; };
+		1A9A0C16552A57B7D1C026A3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A03922CFF166B5D367807 /* CoreData.framework */; };
 		1A9A0C5EC6FB04C1000591E4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0326B28F1CFF90423B10 /* Default-568h@2x.png */; };
 		1A9A0D2CBB9666F9EE4B7073 /* ASALightStormProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0FD8E84D647EEEEB3576 /* ASALightStormProfile.m */; };
 		1A9A0D38ED02F451A5EA9EC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A01A481264EC57E5F1437 /* UIKit.framework */; };
@@ -30,13 +31,14 @@
 		1A9A013012CB466876A32354 /* ASAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAAppDelegate.h; sourceTree = "<group>"; };
 		1A9A018636A06F6A9BB6C2E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1A9A01A481264EC57E5F1437 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		1A9A01C6F04A1D0758B80305 /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
+		1A9A01C6F04A1D0758B80305 /* CDProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDProfile.m; sourceTree = "<group>"; };
 		1A9A0326B28F1CFF90423B10 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1A9A03438024CD60C0935FEE /* ASAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAViewController.h; sourceTree = "<group>"; };
 		1A9A03618FD3465AA07AAA6E /* LightStormDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LightStormDataModel.xcdatamodel; sourceTree = "<group>"; };
+		1A9A03922CFF166B5D367807 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		1A9A05CA1CEB02FF083D3F80 /* ASALightStorm-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "ASALightStorm-Info.plist"; sourceTree = "<group>"; };
 		1A9A05CF4021F74AD0161C85 /* ASAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASAViewController.m; sourceTree = "<group>"; };
-		1A9A0658609ACBDEDEEB5A00 /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
+		1A9A0658609ACBDEDEEB5A00 /* CDProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDProfile.h; sourceTree = "<group>"; };
 		1A9A06FBFAD10F815F5D4CCD /* ASALightStorm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASALightStorm-Prefix.pch"; sourceTree = "<group>"; };
 		1A9A07FB1458A6B8E637501F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		1A9A0870F6CB0A3DF8E9CCD7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				1A9A0D38ED02F451A5EA9EC1 /* UIKit.framework in Frameworks */,
 				1A9A0197890E4EC0D9565148 /* Foundation.framework in Frameworks */,
 				1A9A09A910DCA7055AD73877 /* CoreGraphics.framework in Frameworks */,
+				1A9A0C16552A57B7D1C026A3 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +87,13 @@
 			path = ASALightStorm;
 			sourceTree = "<group>";
 		};
+		1A9A04163590066C0E6F296F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		1A9A068249A3B2B2859D7977 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +105,8 @@
 		1A9A0689B8DE321AA684819F /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				1A9A0658609ACBDEDEEB5A00 /* Profile.h */,
-				1A9A01C6F04A1D0758B80305 /* Profile.m */,
+				1A9A0658609ACBDEDEEB5A00 /* CDProfile.h */,
+				1A9A01C6F04A1D0758B80305 /* CDProfile.m */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -120,6 +130,7 @@
 				1A9A01A481264EC57E5F1437 /* UIKit.framework */,
 				1A9A018636A06F6A9BB6C2E6 /* Foundation.framework */,
 				1A9A010ED508393CA804329E /* CoreGraphics.framework */,
+				1A9A03922CFF166B5D367807 /* CoreData.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,6 +140,7 @@
 			children = (
 				1A9A01FCB5AE2F7FEA4AAAF7 /* ASALightStorm */,
 				1A9A0EB5D3923BE12C0C68B7 /* DataModel */,
+				1A9A04163590066C0E6F296F /* Utilities */,
 			);
 			path = ASALightStormSourceCode;
 			sourceTree = "<group>";
@@ -235,7 +247,7 @@
 				1A9A0A6293257F63900B9ACB /* ASAViewController.m in Sources */,
 				1A9A05DC35C417B6B3EBCF6D /* ASALightStorm.m in Sources */,
 				1A9A0427462184C3CF8F1587 /* LightStormDataModel.xcdatamodeld in Sources */,
-				1A9A0286A6344409D4F23138 /* Profile.m in Sources */,
+				1A9A0286A6344409D4F23138 /* CDProfile.m in Sources */,
 				1A9A0D2CBB9666F9EE4B7073 /* ASALightStormProfile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

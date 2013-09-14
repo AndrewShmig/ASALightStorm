@@ -25,10 +25,46 @@
 // THE SOFTWARE.
 //
 #import "ASALightStormProfile.h"
+#import "ASALightStorm.h"
+#import "CDProfile.h"
 
 
 @implementation ASALightStormProfile
 {
-
+    CDProfile *_profileCD;
 }
+
+#pragma mark - Init methods
+
+- (instancetype)initWithName:(NSString *)name
+                 andPassword:(NSString *)password {
+
+    if((self = [super init])){
+
+//      trying to login with name and password
+        ASALightStormProfile *profile = [[ASALightStorm sharedStorm]
+                                                        loginWithProfileWithName:name
+                                                                     andPassword:password];
+//      profile does not exist so we should create it
+        if(nil == profile){
+
+            _profileCD = [[CDProfile alloc] init];
+            _profileCD.createdAt = [NSDate date];
+            _profileCD.name = name;
+            _profileCD.passwordHash = nil; //TODO: password hash must be here
+
+            if(![[ASALightStorm sharedStorm] saveStormManagedObjectContext]){
+                return nil;
+            }
+        } else {
+
+            _profileCD = profile->_profileCD;
+        }
+    }
+
+    return self;
+}
+
+#pragma mark - Private
+
 @end

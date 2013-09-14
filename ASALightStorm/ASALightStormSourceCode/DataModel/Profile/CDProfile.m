@@ -1,15 +1,15 @@
 //
-//  Profile.m
+//  CDProfile.m
 //  ASALightStorm
 //
 //  Created by AndrewShmig on 9/14/13.
 //  Copyright (c) 2013 AndrewShmig. All rights reserved.
 //
 
-#import "Profile.h"
+#import "CDProfile.h"
 
 
-@implementation Profile
+@implementation CDProfile
 
 @dynamic createdAt;
 @dynamic name;
