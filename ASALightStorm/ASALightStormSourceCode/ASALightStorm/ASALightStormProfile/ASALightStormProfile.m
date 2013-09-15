@@ -197,7 +197,11 @@
         objc_property_t property = properties[i];
 
         NSString *key = [NSString stringWithFormat:@"%s", property_getName(property)];
-        propertiesDic[key] = [_profileCD valueForKey:key];
+        NSString *propertyType = [[NSString stringWithUTF8String:property_getAttributes(property)]
+                                            componentsSeparatedByString:@","][0];
+
+        if (![propertyType isEqualToString:@"T@\"NSSet\""])
+            propertiesDic[key] = [_profileCD valueForKey:key];
     }
 
     return [propertiesDic description];

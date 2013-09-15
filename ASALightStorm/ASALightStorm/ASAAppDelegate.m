@@ -24,6 +24,8 @@
 
 //    code begin
 
+    [ASALightStormProfile destroyAll];
+
     ASALightStormProfile *profile = [ASALightStormProfile profileWithName:@"AndrewShmig"
                                                                  password:@"1234567890"];
     NSLog(@"profile: %@", profile);
