@@ -1,5 +1,5 @@
 //
-// Created by AndrewShmig on 9/14/13.
+// Created by AndrewShmig on 9/15/13.
 //
 // Copyright (c) 2013 Andrew Shmig
 // 
@@ -24,30 +24,23 @@
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
 // THE SOFTWARE.
 //
-#import <Foundation/Foundation.h>
+#import "NSString+MD5.h"
+#import <CommonCrypto/CommonCrypto.h>
 
+@implementation NSString (MD5)
 
-@class CDProfile;
+- (NSString *)MD5 {
 
-// TODO: write unit tests
+    const char* cStr = [self UTF8String];
+    unsigned char digest[CC_MD5_DIGEST_LENGTH];
 
-@interface ASALightStormProfile : NSObject
+    CC_MD5(cStr, strlen(cStr), digest);
 
-@property (nonatomic, readonly) CDProfile *profile;
+    NSMutableString *md5 = [NSMutableString string];
+    for(int i=0; i< CC_MD5_DIGEST_LENGTH; i++)
+        [md5 appendFormat:@"%02x", digest[i]];
 
-+ (instancetype)profileWithName:(NSString *)name
-                       password:(NSString *)password;
-+ (instancetype)profileWithName:(NSString *)name;
-+ (instancetype)logInWithName:(NSString *)name
-                     password:(NSString *)password;
-
-+ (void)destroyProfileWithName:(NSString *)name
-                      password:(NSString *)password;
-+ (void)destroyProfileWithName:(NSString *)name;
-+ (void)destroyProfile:(ASALightStormProfile *)profile;
-+ (void)destroyAll;
-- (void)destroy;
-
-+ (NSArray *)profiles;
+    return md5;
+}
 
 @end

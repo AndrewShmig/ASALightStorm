@@ -1,5 +1,5 @@
 //
-// Created by AndrewShmig on 9/14/13.
+// Created by AndrewShmig on 9/15/13.
 //
 // Copyright (c) 2013 Andrew Shmig
 // 
@@ -26,28 +26,8 @@
 //
 #import <Foundation/Foundation.h>
 
+@interface NSString (SHA512)
 
-@class CDProfile;
-
-// TODO: write unit tests
-
-@interface ASALightStormProfile : NSObject
-
-@property (nonatomic, readonly) CDProfile *profile;
-
-+ (instancetype)profileWithName:(NSString *)name
-                       password:(NSString *)password;
-+ (instancetype)profileWithName:(NSString *)name;
-+ (instancetype)logInWithName:(NSString *)name
-                     password:(NSString *)password;
-
-+ (void)destroyProfileWithName:(NSString *)name
-                      password:(NSString *)password;
-+ (void)destroyProfileWithName:(NSString *)name;
-+ (void)destroyProfile:(ASALightStormProfile *)profile;
-+ (void)destroyAll;
-- (void)destroy;
-
-+ (NSArray *)profiles;
+- (NSString *)SHA512;
 
 @end

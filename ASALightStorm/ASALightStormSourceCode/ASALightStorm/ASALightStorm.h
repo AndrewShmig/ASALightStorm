@@ -32,8 +32,6 @@
 
 @interface ASALightStorm : NSObject
 
-@property (nonatomic, strong, readonly) NSManagedObjectModel *stormManagedObjectModel;
-@property (nonatomic, strong, readonly) NSPersistentStoreCoordinator *stormPersistentStoreCoordinator;
 @property (nonatomic, strong, readonly) NSManagedObjectContext *stormManagedObjectContext;
 
 + (instancetype)sharedStorm;

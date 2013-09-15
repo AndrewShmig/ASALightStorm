@@ -19,6 +19,7 @@
     self.viewController = [[ASAViewController alloc] initWithNibName:@"ASAViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+
     return YES;
 }
 

@@ -10,6 +10,7 @@
 		1A9A0167DDBA3CEF52C10F51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0961D5A3D09C74F3F551 /* main.m */; };
 		1A9A0197890E4EC0D9565148 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A018636A06F6A9BB6C2E6 /* Foundation.framework */; };
 		1A9A0286A6344409D4F23138 /* CDProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A01C6F04A1D0758B80305 /* CDProfile.m */; };
+		1A9A033455E9719933CB0A06 /* NSString+SHA512.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A052B6A633A94D1AE838E /* NSString+SHA512.m */; };
 		1A9A039A57E682CB3543DE61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0A61BEA4A73B3B1C7EE5 /* InfoPlist.strings */; };
 		1A9A0427462184C3CF8F1587 /* LightStormDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A04AF18EBC379C62BFA0B /* LightStormDataModel.xcdatamodeld */; };
 		1A9A050146581539EE71F2D4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A07FB1458A6B8E637501F /* Default@2x.png */; };
@@ -23,6 +24,7 @@
 		1A9A0C5EC6FB04C1000591E4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0326B28F1CFF90423B10 /* Default-568h@2x.png */; };
 		1A9A0D2CBB9666F9EE4B7073 /* ASALightStormProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0FD8E84D647EEEEB3576 /* ASALightStormProfile.m */; };
 		1A9A0D38ED02F451A5EA9EC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A01A481264EC57E5F1437 /* UIKit.framework */; };
+		1A9A0F2493E2DD746F1093A4 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0338DF9DA71B1AC25466 /* NSString+MD5.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,13 +34,17 @@
 		1A9A018636A06F6A9BB6C2E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1A9A01A481264EC57E5F1437 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1A9A01C6F04A1D0758B80305 /* CDProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDProfile.m; sourceTree = "<group>"; };
+		1A9A020C0C59ED7E847D3A75 /* NSString+SHA512.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SHA512.h"; sourceTree = "<group>"; };
 		1A9A0326B28F1CFF90423B10 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1A9A0338DF9DA71B1AC25466 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		1A9A03438024CD60C0935FEE /* ASAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAViewController.h; sourceTree = "<group>"; };
 		1A9A03618FD3465AA07AAA6E /* LightStormDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LightStormDataModel.xcdatamodel; sourceTree = "<group>"; };
 		1A9A03922CFF166B5D367807 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1A9A052B6A633A94D1AE838E /* NSString+SHA512.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SHA512.m"; sourceTree = "<group>"; };
 		1A9A05CA1CEB02FF083D3F80 /* ASALightStorm-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "ASALightStorm-Info.plist"; sourceTree = "<group>"; };
 		1A9A05CF4021F74AD0161C85 /* ASAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASAViewController.m; sourceTree = "<group>"; };
 		1A9A0658609ACBDEDEEB5A00 /* CDProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDProfile.h; sourceTree = "<group>"; };
+		1A9A06D2D6DCF8502FA1CF41 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		1A9A06FBFAD10F815F5D4CCD /* ASALightStorm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASALightStorm-Prefix.pch"; sourceTree = "<group>"; };
 		1A9A07FB1458A6B8E637501F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		1A9A0870F6CB0A3DF8E9CCD7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -90,6 +96,7 @@
 		1A9A04163590066C0E6F296F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				1A9A0B0CA39F5C8359E353C6 /* NSString */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -143,6 +150,17 @@
 				1A9A04163590066C0E6F296F /* Utilities */,
 			);
 			path = ASALightStormSourceCode;
+			sourceTree = "<group>";
+		};
+		1A9A0B0CA39F5C8359E353C6 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A0338DF9DA71B1AC25466 /* NSString+MD5.m */,
+				1A9A06D2D6DCF8502FA1CF41 /* NSString+MD5.h */,
+				1A9A052B6A633A94D1AE838E /* NSString+SHA512.m */,
+				1A9A020C0C59ED7E847D3A75 /* NSString+SHA512.h */,
+			);
+			path = NSString;
 			sourceTree = "<group>";
 		};
 		1A9A0B6C427EEA35E4C85ADA /* Supporting Files */ = {
@@ -249,6 +267,8 @@
 				1A9A0427462184C3CF8F1587 /* LightStormDataModel.xcdatamodeld in Sources */,
 				1A9A0286A6344409D4F23138 /* CDProfile.m in Sources */,
 				1A9A0D2CBB9666F9EE4B7073 /* ASALightStormProfile.m in Sources */,
+				1A9A0F2493E2DD746F1093A4 /* NSString+MD5.m in Sources */,
+				1A9A033455E9719933CB0A06 /* NSString+SHA512.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +356,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ASALightStorm/ASALightStorm-Prefix.pch";
 				INFOPLIST_FILE = "ASALightStorm/ASALightStorm-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -347,6 +371,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ASALightStorm/ASALightStorm-Prefix.pch";
 				INFOPLIST_FILE = "ASALightStorm/ASALightStorm-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

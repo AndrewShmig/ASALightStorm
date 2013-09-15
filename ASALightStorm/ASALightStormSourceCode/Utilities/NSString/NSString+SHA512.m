@@ -1,5 +1,5 @@
 //
-// Created by AndrewShmig on 9/14/13.
+// Created by AndrewShmig on 9/15/13.
 //
 // Copyright (c) 2013 Andrew Shmig
 // 
@@ -24,30 +24,24 @@
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
 // THE SOFTWARE.
 //
-#import <Foundation/Foundation.h>
+#import "NSString+SHA512.h"
+#import <CommonCrypto/CommonCrypto.h>
 
 
-@class CDProfile;
+@implementation NSString (SHA512)
 
-// TODO: write unit tests
+- (NSString *)SHA512 {
 
-@interface ASALightStormProfile : NSObject
+    const char* cStr = [self UTF8String];
+    unsigned char digest[CC_SHA512_DIGEST_LENGTH];
 
-@property (nonatomic, readonly) CDProfile *profile;
+    CC_SHA512(cStr, strlen(cStr), digest);
 
-+ (instancetype)profileWithName:(NSString *)name
-                       password:(NSString *)password;
-+ (instancetype)profileWithName:(NSString *)name;
-+ (instancetype)logInWithName:(NSString *)name
-                     password:(NSString *)password;
+    NSMutableString *sha512 = [NSMutableString string];
+    for(int i=0; i< CC_SHA512_DIGEST_LENGTH; i++)
+        [sha512 appendFormat:@"%02x", digest[i]];
 
-+ (void)destroyProfileWithName:(NSString *)name
-                      password:(NSString *)password;
-+ (void)destroyProfileWithName:(NSString *)name;
-+ (void)destroyProfile:(ASALightStormProfile *)profile;
-+ (void)destroyAll;
-- (void)destroy;
-
-+ (NSArray *)profiles;
+    return sha512;
+}
 
 @end

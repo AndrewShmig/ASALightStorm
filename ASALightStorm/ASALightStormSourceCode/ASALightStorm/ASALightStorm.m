@@ -27,6 +27,7 @@
 #import <CoreData/CoreData.h>
 #import "ASALightStorm.h"
 #import "ASALightStormProfile.h"
+#import "NSString+SHA512.h"
 
 
 // -- Public methods -- //
@@ -123,65 +124,6 @@
     }
 
     return _stormManagedObjectContext;
-}
-
-#pragma mark - Profile
-
-- (ASALightStormProfile *)createProfileWithName:(NSString *)name
-                                    andPassword:(NSString *)password {
-
-    ASALightStormProfile *newProfile = [[ASALightStormProfile alloc]
-                                                              initWithName:name
-                                                               andPassword:password];
-
-    return newProfile;
-}
-
-- (ASALightStormProfile *)createProfileWithName:(NSString *)name {
-
-    ASALightStormProfile *newProfile = [[ASALightStormProfile alloc]
-                                                              initWithName:name
-                                                               andPassword:@""];
-
-    return newProfile;
-}
-
-- (ASALightStormProfile *)loginWithProfileWithName:(NSString *)name
-                                       andPassword:(NSString *)password {
-
-//    TODO: loginWithProfileWithName:andPassword:
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc]
-                                                    initWithEntityName:@"CDProfile"];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name = %@ AND passwordHash = %@",
-                                                              name,
-                                                              password];
-    [fetchRequest setPredicate:predicate];
-
-    NSArray *result = [[self stormManagedObjectContext]
-                             executeFetchRequest:fetchRequest
-                                           error:nil];
-
-//    no such name & password
-    if (0 == [result count])
-        return nil;
-
-//    name & password exist
-    return (ASALightStormProfile *) [result lastObject];
-}
-
-- (BOOL)destroyProfileWithName:(NSString *)name andPassword:(NSString *)password {
-
-//    TODO: destroyProfileWithName:andPassword:
-}
-
-- (BOOL)destroyProfileWithName:(NSString *)name {
-
-//    TODO: sestroyProfileWithName:
-}
-
-- (BOOL)destroyAllProfiles {
-
-//    TODO: destroyAllProfiles
 }
 
 @end
