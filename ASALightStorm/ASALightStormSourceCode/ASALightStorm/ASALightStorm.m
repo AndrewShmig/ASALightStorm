@@ -63,7 +63,7 @@
 
     if (![[self stormManagedObjectContext] save:&error]) {
 
-        NSLog(@"==> Error while saving storm context: %@, %@", error, [error userInfo]);
+        NSLog(@"Error: %@, %@", error, [error userInfo]);
         return NO;
     }
 
