@@ -38,18 +38,3 @@
 - (BOOL)saveStormManagedObjectContext;
 
 @end
-
-
-@interface ASALightStorm (Profile)
-
-- (ASALightStormProfile *)createProfileWithName:(NSString *)name
-                                    andPassword:(NSString *)password;
-- (ASALightStormProfile *)createProfileWithName:(NSString *)name;
-- (ASALightStormProfile *)loginWithProfileWithName:(NSString *)name
-                                       andPassword:(NSString *)password;
-- (BOOL)destroyProfileWithName:(NSString *)name
-                   andPassword:(NSString *)password;
-- (BOOL)destroyProfileWithName:(NSString *)name;
-- (BOOL)destroyAllProfiles;
-
-@end
