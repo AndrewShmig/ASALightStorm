@@ -30,6 +30,7 @@
 @class CDProfile;
 
 // TODO: write unit tests
+// TODO: write documentation
 
 @interface ASALightStormProfile : NSObject
 
