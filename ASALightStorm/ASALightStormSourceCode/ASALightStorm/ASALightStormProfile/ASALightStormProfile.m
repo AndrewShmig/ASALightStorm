@@ -139,6 +139,9 @@
         _profileCD.name = name;
         _profileCD.passwordHash = [password SHA512];
 
+        [[[ASALightStorm sharedStorm] stormManagedObjectContext]
+                         insertObject:_profileCD];
+
         if (![[ASALightStorm sharedStorm] saveStormManagedObjectContext]) {
             return nil;
         }
