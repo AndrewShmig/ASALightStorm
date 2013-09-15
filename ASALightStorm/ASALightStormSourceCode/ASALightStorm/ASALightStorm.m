@@ -26,12 +26,11 @@
 //
 #import <CoreData/CoreData.h>
 #import "ASALightStorm.h"
-#import "ASALightStormProfile.h"
-#import "NSString+SHA512.h"
 
 
 // -- Public methods -- //
-@implementation ASALightStorm {
+@implementation ASALightStorm
+{
 
 //    Core data stack
     NSManagedObjectModel *_stormManagedObjectModel;
@@ -41,10 +40,12 @@
 
 #pragma mark - Main
 
-+ (instancetype)sharedStorm {
++ (instancetype)sharedStorm
+{
+    NSLog(@"%s", __FUNCTION__);
 
     static ASALightStorm *_sharedStorm = nil;
-    dispatch_once_t predicate;
+    static dispatch_once_t predicate;
 
     dispatch_once(&predicate, ^
     {
@@ -54,7 +55,9 @@
     return _sharedStorm;
 }
 
-- (BOOL)saveStormManagedObjectContext {
+- (BOOL)saveStormManagedObjectContext
+{
+    NSLog(@"%s", __FUNCTION__);
 
     NSError *error = nil;
 
@@ -67,12 +70,14 @@
     return YES;
 }
 
-- (NSManagedObjectModel *)stormManagedObjectModel {
+- (NSManagedObjectModel *)stormManagedObjectModel
+{
+    NSLog(@"%s", __FUNCTION__);
 
     if (nil != _stormManagedObjectModel)
         return _stormManagedObjectModel;
 
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"ASALightStorm"
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"LightStormDataModel"
                                               withExtension:@"momd"];
     _stormManagedObjectModel = [[NSManagedObjectModel alloc]
                                                       initWithContentsOfURL:modelURL];
@@ -80,7 +85,9 @@
     return _stormManagedObjectModel;
 }
 
-- (NSPersistentStoreCoordinator *)stormPersistentStoreCoordinator {
+- (NSPersistentStoreCoordinator *)stormPersistentStoreCoordinator
+{
+    NSLog(@"%s", __FUNCTION__);
 
     if (nil != _stormPersistentStoreCoordinator)
         return _stormPersistentStoreCoordinator;
@@ -89,7 +96,7 @@
                                           URLsForDirectory:NSDocumentDirectory
                                                  inDomains:NSUserDomainMask]
                                           lastObject]
-                                          URLByAppendingPathComponent:@"ASALightStorme.sqlite"];
+                                          URLByAppendingPathComponent:@"ASALightStorm.sqlite"];
 
     _stormPersistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc]
                                                                       initWithManagedObjectModel:[self stormManagedObjectModel]];
@@ -103,22 +110,22 @@
                                                                       URL:stormStore
                                                                   options:nil
                                                                     error:&error]) {
-            NSLog(@"==> Error while adding persistent store: %@, %@", error, [error userInfo]);
-            abort();
+            NSLog(@"Error: %@, %@", error, [error userInfo]);
         }
     }
 
     return _stormPersistentStoreCoordinator;
 }
 
-- (NSManagedObjectContext *)stormManagedObjectContext {
+- (NSManagedObjectContext *)stormManagedObjectContext
+{
+    NSLog(@"%s", __FUNCTION__);
 
     if (nil != _stormManagedObjectContext)
         return _stormManagedObjectContext;
 
     NSPersistentStoreCoordinator *stormCoordinator = [self stormPersistentStoreCoordinator];
     if (nil != stormCoordinator) {
-
         _stormManagedObjectContext = [[NSManagedObjectContext alloc] init];
         [_stormManagedObjectContext setPersistentStoreCoordinator:stormCoordinator];
     }

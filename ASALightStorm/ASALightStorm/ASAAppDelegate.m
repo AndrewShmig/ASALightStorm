@@ -9,6 +9,8 @@
 #import "ASAAppDelegate.h"
 
 #import "ASAViewController.h"
+#import "ASALightStorm.h"
+#import "ASALightStormProfile.h"
 
 @implementation ASAAppDelegate
 
@@ -22,7 +24,9 @@
 
 //    code begin
 
-
+    ASALightStormProfile *profile = [ASALightStormProfile profileWithName:@"AndrewShmig"
+                                                                 password:@"1234567890"];
+    NSLog(@"profile: %@", profile);
 
 //    code end
 

@@ -28,6 +28,7 @@
 #import "ASALightStorm.h"
 #import "CDProfile.h"
 #import "NSString+SHA512.h"
+#import <objc/runtime.h>
 
 
 @implementation ASALightStormProfile
@@ -40,6 +41,8 @@
 + (instancetype)profileWithName:(NSString *)name
                        password:(NSString *)password
 {
+    NSLog(@"%s", __FUNCTION__);
+
     ASALightStormProfile *newProfile;
 
     if (![ASALightStormProfile ASALS_existsProfileWithName:name]) {
@@ -55,6 +58,8 @@
 
 + (instancetype)profileWithName:(NSString *)name
 {
+    NSLog(@"%s", __FUNCTION__);
+
     return [ASALightStormProfile profileWithName:name
                                         password:@""];
 }
@@ -62,6 +67,8 @@
 + (instancetype)logInWithName:(NSString *)name
                      password:(NSString *)password
 {
+    NSLog(@"%s", __FUNCTION__);
+
     ASALightStormProfile *profile = [ASALightStormProfile ASALS_profileWithName:name
                                                                        password:password];
 
@@ -71,6 +78,8 @@
 + (void)destroyProfileWithName:(NSString *)name
                       password:(NSString *)password
 {
+    NSLog(@"%s", __FUNCTION__);
+
     ASALightStormProfile *profile = [ASALightStormProfile ASALS_profileWithName:name
                                                                        password:password];
 
@@ -80,12 +89,16 @@
 
 + (void)destroyProfileWithName:(NSString *)name
 {
+    NSLog(@"%s", __FUNCTION__);
+
     [ASALightStormProfile destroyProfileWithName:name
                                         password:@""];
 }
 
 + (void)destroyProfile:(ASALightStormProfile *)profile
 {
+    NSLog(@"%s", __FUNCTION__);
+
     if (nil != profile) {
         [[[ASALightStorm sharedStorm] stormManagedObjectContext]
                          deleteObject:profile->_profileCD];
@@ -95,14 +108,18 @@
 
 + (NSArray *)profiles
 {
+    NSLog(@"%s", __FUNCTION__);
+
 //    configuring fetch request
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc]
-                                                    initWithEntityName:@"CDProfile"];
+                                                    initWithEntityName:@"Profile"];
 
 //    executing fetch request
+    NSError *error = nil;
     NSArray *profiles = [[[ASALightStorm sharedStorm] stormManagedObjectContext]
                                          executeFetchRequest:fetchRequest
-                                                       error:nil];
+                                                       error:&error];
+    NSLog(@"Error: %@, %@", error, [error userInfo]);
 
 //    converting CDProfiles to ASALightStormProfiles
     NSMutableArray *lightStormProfiles = [NSMutableArray array];
@@ -119,6 +136,8 @@
 
 + (void)destroyAll
 {
+    NSLog(@"%s", __FUNCTION__);
+
     NSArray *profiles = [ASALightStormProfile profiles];
 
     for (ASALightStormProfile *profile in profiles) {
@@ -131,16 +150,18 @@
 - (instancetype)initWithName:(NSString *)name
                  andPassword:(NSString *)password
 {
+    NSLog(@"%s", __FUNCTION__);
 
-    if ((self = [super init])) {
+    self = [super init];
 
-        _profileCD = [[CDProfile alloc] init];
-        _profileCD.createdAt = [NSDate date];
+    if (nil != self) {
+        _profileCD = (CDProfile *) [NSEntityDescription insertNewObjectForEntityForName:@"Profile"
+                                                                 inManagedObjectContext:[[ASALightStorm sharedStorm]
+                                                                                                        stormManagedObjectContext]];
+
         _profileCD.name = name;
         _profileCD.passwordHash = [password SHA512];
-
-        [[[ASALightStorm sharedStorm] stormManagedObjectContext]
-                         insertObject:_profileCD];
+        _profileCD.createdAt = [NSDate date];
 
         if (![[ASALightStorm sharedStorm] saveStormManagedObjectContext]) {
             return nil;
@@ -154,31 +175,55 @@
 
 - (CDProfile *)profile
 {
+    NSLog(@"%s", __FUNCTION__);
+
     return _profileCD;
 }
 
 - (void)destroy
 {
+    NSLog(@"%s", __FUNCTION__);
+
     [ASALightStormProfile destroyProfile:self];
+}
+
+- (NSString *)description
+{
+    NSMutableDictionary *propertiesDic = [NSMutableDictionary dictionary];
+    unsigned propertiesCount;
+    objc_property_t *properties = class_copyPropertyList([CDProfile class], &propertiesCount);
+
+    for(int i=0; i<propertiesCount; i++){
+        objc_property_t property = properties[i];
+
+        NSString *key = [NSString stringWithFormat:@"%s", property_getName(property)];
+        propertiesDic[key] = [_profileCD valueForKey:key];
+    }
+
+    return [propertiesDic description];
 }
 
 #pragma mark - Private
 
 + (BOOL)ASALS_existsProfileWithName:(NSString *)name
 {
+    NSLog(@"%s", __FUNCTION__);
+
 //    configuring fetch request
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc]
-                                                    initWithEntityName:@"CDProfile"];
+                                                    initWithEntityName:@"Profile"];
 
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(name == %@)",
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name == %@",
                                                               name];
     [fetchRequest setPredicate:predicate];
 
 //    executing fetch request
+    NSError *error = nil;
     NSArray *fetchResult = [[[ASALightStorm sharedStorm]
                                             stormManagedObjectContext]
                                             executeFetchRequest:fetchRequest
-                                                          error:nil];
+                                                          error:&error];
+    NSLog(@"Error: %@, %@", error, [error userInfo]);
 
 //    no profile with such name
     if (0 == [fetchResult count])
@@ -190,9 +235,11 @@
 + (ASALightStormProfile *)ASALS_profileWithName:(NSString *)name
                                        password:(NSString *)password
 {
+    NSLog(@"%s", __FUNCTION__);
+
 //    configuring fetch request
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc]
-                                                    initWithEntityName:@"CDProfile"];
+                                                    initWithEntityName:@"Profile"];
 
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(name == %@) && (passwordHash == %@)",
                                                               name,
@@ -200,10 +247,14 @@
     [fetchRequest setPredicate:predicate];
 
 //    performing fetch request
+    NSError *error = nil;
     NSArray *queryResult = [[[ASALightStorm sharedStorm]
                                             stormManagedObjectContext]
                                             executeFetchRequest:fetchRequest
-                                                          error:nil];
+                                                          error:&error];
+
+    NSLog(@"Error: %@, %@", error, [error userInfo]);
+
 //    no profile with such name && password
     if (0 == [queryResult count])
         return nil;
