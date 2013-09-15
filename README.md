@@ -4,7 +4,7 @@ ASALightStorm
 Powerful & flexible iOS browser component based on UIWebView (response to [Opera Coast Browser](http://habrahabr.ru/company/opera/blog/193078/)).
 
 
-* [Data model](https://github.com/AndrewShmig/ASALightStorm/wiki/Модель-данных)
+* [Data model](https://github.com/AndrewShmig/ASALightStorm/wiki/Data-model)
 
 
 #License
