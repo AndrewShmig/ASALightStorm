@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ASALightStorm.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ASALightStorm</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASALightStorm.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASALightStorm/setStormManagedObjectContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASALightStorm.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSManagedObjectContext *stormManagedObjectContext</Declaration>
+			
+			
+			<Anchor>//api/name/stormManagedObjectContext</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASALightStorm/stormManagedObjectContext</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASALightStorm.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSManagedObjectContext *stormManagedObjectContext</Declaration>
+			
+			
+			<Anchor>//api/name/stormManagedObjectContext</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ASALightStorm/stormManagedObjectContext</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASALightStorm.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSManagedObjectContext *stormManagedObjectContext</Declaration>
+			
+			
+			<Anchor>//api/name/stormManagedObjectContext</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ASALightStorm/sharedStorm</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASALightStorm.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)sharedStorm</Declaration>
+			
+			
+			<Anchor>//api/name/sharedStorm</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASALightStorm/saveStormManagedObjectContext</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASALightStorm.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)saveStormManagedObjectContext</Declaration>
+			
+			
+			<Anchor>//api/name/saveStormManagedObjectContext</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+	</File>
+</Tokens>

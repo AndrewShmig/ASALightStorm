@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>Light Storm</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>ASAAppDelegate</Name>
+			<Path>Classes/ASAAppDelegate.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>ASALightStorm</Name>
+			<Path>Classes/ASALightStorm.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>ASALightStormProfile</Name>
+			<Path>Classes/ASALightStormProfile.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>ASAViewController</Name>
+			<Path>Classes/ASAViewController.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>AppDelegate</Name>
+			<Path>Classes/AppDelegate.html</Path>
+		</Node>
+		<Node id="6">
+			<Name>CDProfile</Name>
+			<Path>Classes/CDProfile.html</Path>
+		</Node>
+		
+		<Node id="7">
+			<Name>NSString(MD5)</Name>
+			<Path>Categories/NSString+MD5.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>NSString(SHA512)</Name>
+			<Path>Categories/NSString+SHA512.html</Path>
+		</Node>
+		
+		
+	</Library>
+</DocSetNodes>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ASALightStormProfile.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ASALightStormProfile</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASALightStormProfile/setProfile:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CDProfile *profile</Declaration>
+			
+			
+			<Anchor>//api/name/profile</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASALightStormProfile/profile</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CDProfile *profile</Declaration>
+			
+			
+			<Anchor>//api/name/profile</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ASALightStormProfile/profile</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CDProfile *profile</Declaration>
+			
+			
+			<Anchor>//api/name/profile</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ASALightStormProfile/profileWithName:password:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)profileWithName:(NSString *)name password:(NSString *)password</Declaration>
+			
+			
+			<Anchor>//api/name/profileWithName:password:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ASALightStormProfile/profileWithName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)profileWithName:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/profileWithName:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ASALightStormProfile/logInWithName:password:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)logInWithName:(NSString *)name password:(NSString *)password</Declaration>
+			
+			
+			<Anchor>//api/name/logInWithName:password:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ASALightStormProfile/destroyProfileWithName:password:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
+			
+			<Declaration>+ (void)destroyProfileWithName:(NSString *)name password:(NSString *)password</Declaration>
+			
+			
+			<Anchor>//api/name/destroyProfileWithName:password:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ASALightStormProfile/destroyProfileWithName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
+			
+			<Declaration>+ (void)destroyProfileWithName:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/destroyProfileWithName:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ASALightStormProfile/destroyProfile:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
+			
+			<Declaration>+ (void)destroyProfile:(ASALightStormProfile *)profile</Declaration>
+			
+			
+			<Anchor>//api/name/destroyProfile:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ASALightStormProfile/destroyAll</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
+			
+			<Declaration>+ (void)destroyAll</Declaration>
+			
+			
+			<Anchor>//api/name/destroyAll</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASALightStormProfile/destroy</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
+			
+			<Declaration>- (void)destroy</Declaration>
+			
+			
+			<Anchor>//api/name/destroy</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ASALightStormProfile/profiles</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)profiles</Declaration>
+			
+			
+			<Anchor>//api/name/profiles</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+	</File>
+</Tokens>

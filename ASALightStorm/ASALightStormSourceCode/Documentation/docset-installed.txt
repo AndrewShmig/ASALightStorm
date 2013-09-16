@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/new/Library/Developer/Shared/Documentation/DocSets/com.andrewshmig.Light-Storm.docset
+Time: 2013-09-16 14:35:20 +0000
