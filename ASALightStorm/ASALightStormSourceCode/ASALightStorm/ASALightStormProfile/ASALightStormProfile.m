@@ -38,8 +38,8 @@
 
 #pragma mark - Class methods
 
-+ (instancetype)profileWithName:(NSString *)name
-                       password:(NSString *)password
++ (id)profileWithName:(NSString *)name
+             password:(NSString *)password
 {
     NSLog(@"%s", __FUNCTION__);
 
@@ -56,7 +56,7 @@
     return newProfile;
 }
 
-+ (instancetype)profileWithName:(NSString *)name
++ (id)profileWithName:(NSString *)name
 {
     NSLog(@"%s", __FUNCTION__);
 
@@ -64,8 +64,8 @@
                                         password:@""];
 }
 
-+ (instancetype)logInWithName:(NSString *)name
-                     password:(NSString *)password
++ (id)logInWithName:(NSString *)name
+           password:(NSString *)password
 {
     NSLog(@"%s", __FUNCTION__);
 
@@ -147,8 +147,8 @@
 
 #pragma mark - Init methods
 
-- (instancetype)initWithName:(NSString *)name
-                 andPassword:(NSString *)password
+- (id)initWithName:(NSString *)name
+       andPassword:(NSString *)password
 {
     NSLog(@"%s", __FUNCTION__);
 
@@ -193,10 +193,11 @@
     unsigned propertiesCount;
     objc_property_t *properties = class_copyPropertyList([CDProfile class], &propertiesCount);
 
-    for(int i=0; i<propertiesCount; i++){
+    for (int i = 0; i < propertiesCount; i++) {
         objc_property_t property = properties[i];
 
-        NSString *key = [NSString stringWithFormat:@"%s", property_getName(property)];
+        NSString *key = [NSString stringWithFormat:@"%s",
+                                                   property_getName(property)];
         NSString *propertyType = [[NSString stringWithUTF8String:property_getAttributes(property)]
                                             componentsSeparatedByString:@","][0];
 
