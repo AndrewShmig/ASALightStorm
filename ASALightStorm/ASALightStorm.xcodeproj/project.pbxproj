@@ -29,7 +29,8 @@
 		D574124617EB877F005E18C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A018636A06F6A9BB6C2E6 /* Foundation.framework */; };
 		D574124717EB877F005E18C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A01A481264EC57E5F1437 /* UIKit.framework */; };
 		D574124D17EB877F005E18C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D574124B17EB877F005E18C2 /* InfoPlist.strings */; };
-		D574124F17EB877F005E18C2 /* ASALightStorm_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D574124E17EB877F005E18C2 /* ASALightStorm_Tests.m */; };
+		D574126C17EB8B88005E18C2 /* ASALightStormProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = D574126B17EB8B88005E18C2 /* ASALightStormProfile.m */; };
+		D574126E17EB8BAF005E18C2 /* ASALightStorm.m in Sources */ = {isa = PBXBuildFile; fileRef = D574126D17EB8BAF005E18C2 /* ASALightStorm.m */; };
 		D5B958C517E74B580001441C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A01A481264EC57E5F1437 /* UIKit.framework */; };
 		D5B958C617E74B580001441C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A018636A06F6A9BB6C2E6 /* Foundation.framework */; };
 		D5B958C717E74B580001441C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A010ED508393CA804329E /* CoreGraphics.framework */; };
@@ -84,9 +85,10 @@
 		D574124417EB877F005E18C2 /* ASALightStorm Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ASALightStorm Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D574124A17EB877F005E18C2 /* ASALightStorm Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ASALightStorm Tests-Info.plist"; sourceTree = "<group>"; };
 		D574124C17EB877F005E18C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D574124E17EB877F005E18C2 /* ASALightStorm_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASALightStorm_Tests.m; sourceTree = "<group>"; };
 		D574125017EB877F005E18C2 /* ASALightStorm Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASALightStorm Tests-Prefix.pch"; sourceTree = "<group>"; };
 		D574126517EB87A8005E18C2 /* ASALightStorm Tests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ASALightStorm Tests copy-Info.plist"; path = "/Users/new/Documents/Development/ASALightStorm/ASALightStorm/ASALightStorm Tests copy-Info.plist"; sourceTree = "<absolute>"; };
+		D574126B17EB8B88005E18C2 /* ASALightStormProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASALightStormProfile.m; sourceTree = "<group>"; };
+		D574126D17EB8BAF005E18C2 /* ASALightStorm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASALightStorm.m; sourceTree = "<group>"; };
 		D5B958C417E74B580001441C /* AppleDoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleDoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B958CA17E74B580001441C /* AppleDoc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppleDoc-Info.plist"; sourceTree = "<group>"; };
 		D5B958CC17E74B580001441C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -265,8 +267,9 @@
 		D574124817EB877F005E18C2 /* ASALightStorm Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D574124E17EB877F005E18C2 /* ASALightStorm_Tests.m */,
 				D574124917EB877F005E18C2 /* Supporting Files */,
+				D574126B17EB8B88005E18C2 /* ASALightStormProfile.m */,
+				D574126D17EB8BAF005E18C2 /* ASALightStorm.m */,
 			);
 			path = "ASALightStorm Tests";
 			sourceTree = "<group>";
@@ -464,7 +467,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D574124F17EB877F005E18C2 /* ASALightStorm_Tests.m in Sources */,
+				D574126E17EB8BAF005E18C2 /* ASALightStorm.m in Sources */,
+				D574126C17EB8B88005E18C2 /* ASALightStormProfile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,6 +726,7 @@
 				D574125517EB877F005E18C2 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5B958DC17E74B580001441C /* Build configuration list for PBXNativeTarget "AppleDoc" */ = {
 			isa = XCConfigurationList;
