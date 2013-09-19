@@ -25,6 +25,11 @@
 		1A9A0D2CBB9666F9EE4B7073 /* ASALightStormProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0FD8E84D647EEEEB3576 /* ASALightStormProfile.m */; };
 		1A9A0D38ED02F451A5EA9EC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A01A481264EC57E5F1437 /* UIKit.framework */; };
 		1A9A0F2493E2DD746F1093A4 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0338DF9DA71B1AC25466 /* NSString+MD5.m */; };
+		D574124517EB877F005E18C2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D574122E17EB85BF005E18C2 /* XCTest.framework */; };
+		D574124617EB877F005E18C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A018636A06F6A9BB6C2E6 /* Foundation.framework */; };
+		D574124717EB877F005E18C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A01A481264EC57E5F1437 /* UIKit.framework */; };
+		D574124D17EB877F005E18C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D574124B17EB877F005E18C2 /* InfoPlist.strings */; };
+		D574124F17EB877F005E18C2 /* ASALightStorm_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D574124E17EB877F005E18C2 /* ASALightStorm_Tests.m */; };
 		D5B958C517E74B580001441C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A01A481264EC57E5F1437 /* UIKit.framework */; };
 		D5B958C617E74B580001441C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A018636A06F6A9BB6C2E6 /* Foundation.framework */; };
 		D5B958C717E74B580001441C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A010ED508393CA804329E /* CoreGraphics.framework */; };
@@ -35,6 +40,16 @@
 		D5B958D717E74B580001441C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5B958D617E74B580001441C /* Default@2x.png */; };
 		D5B958D917E74B580001441C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5B958D817E74B580001441C /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D574125117EB877F005E18C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A9A0660823AD2948BF7FB92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A9A0A9850BFEFF536BAE1AF;
+			remoteInfo = ASALightStorm;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1A9A008528F4013C19336FFD /* ASAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASAAppDelegate.m; sourceTree = "<group>"; };
@@ -65,6 +80,13 @@
 		1A9A0EFD9359D162006865A7 /* ASALightStorm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASALightStorm.m; sourceTree = "<group>"; };
 		1A9A0F066D850D4039123BDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A9A0FD8E84D647EEEEB3576 /* ASALightStormProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASALightStormProfile.m; sourceTree = "<group>"; };
+		D574122E17EB85BF005E18C2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D574124417EB877F005E18C2 /* ASALightStorm Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ASALightStorm Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D574124A17EB877F005E18C2 /* ASALightStorm Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ASALightStorm Tests-Info.plist"; sourceTree = "<group>"; };
+		D574124C17EB877F005E18C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D574124E17EB877F005E18C2 /* ASALightStorm_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASALightStorm_Tests.m; sourceTree = "<group>"; };
+		D574125017EB877F005E18C2 /* ASALightStorm Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASALightStorm Tests-Prefix.pch"; sourceTree = "<group>"; };
+		D574126517EB87A8005E18C2 /* ASALightStorm Tests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ASALightStorm Tests copy-Info.plist"; path = "/Users/new/Documents/Development/ASALightStorm/ASALightStorm/ASALightStorm Tests copy-Info.plist"; sourceTree = "<absolute>"; };
 		D5B958C417E74B580001441C /* AppleDoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleDoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B958CA17E74B580001441C /* AppleDoc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppleDoc-Info.plist"; sourceTree = "<group>"; };
 		D5B958CC17E74B580001441C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -89,6 +111,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D574124117EB877F005E18C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D574124517EB877F005E18C2 /* XCTest.framework in Frameworks */,
+				D574124717EB877F005E18C2 /* UIKit.framework in Frameworks */,
+				D574124617EB877F005E18C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5B958C117E74B580001441C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -106,10 +138,12 @@
 			isa = PBXGroup;
 			children = (
 				D5B958C817E74B580001441C /* AppleDoc */,
+				D574124817EB877F005E18C2 /* ASALightStorm Tests */,
 				1A9A068249A3B2B2859D7977 /* Products */,
 				1A9A08BCCD2C2CDDD8429300 /* Frameworks */,
 				1A9A06F5BD0A1EC01724B31E /* ASALightStorm */,
 				1A9A093E8E2A26F120BAF9E4 /* ASALightStormSourceCode */,
+				D574126517EB87A8005E18C2 /* ASALightStorm Tests copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +170,7 @@
 			children = (
 				1A9A0A1113F02D42905162DD /* ASALightStorm.app */,
 				D5B958C417E74B580001441C /* AppleDoc.app */,
+				D574124417EB877F005E18C2 /* ASALightStorm Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,6 +204,7 @@
 				1A9A018636A06F6A9BB6C2E6 /* Foundation.framework */,
 				1A9A010ED508393CA804329E /* CoreGraphics.framework */,
 				1A9A03922CFF166B5D367807 /* CoreData.framework */,
+				D574122E17EB85BF005E18C2 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -226,6 +262,25 @@
 			path = DataModel;
 			sourceTree = "<group>";
 		};
+		D574124817EB877F005E18C2 /* ASALightStorm Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D574124E17EB877F005E18C2 /* ASALightStorm_Tests.m */,
+				D574124917EB877F005E18C2 /* Supporting Files */,
+			);
+			path = "ASALightStorm Tests";
+			sourceTree = "<group>";
+		};
+		D574124917EB877F005E18C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D574124A17EB877F005E18C2 /* ASALightStorm Tests-Info.plist */,
+				D574124B17EB877F005E18C2 /* InfoPlist.strings */,
+				D574125017EB877F005E18C2 /* ASALightStorm Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D5B958C817E74B580001441C /* AppleDoc */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +325,24 @@
 			productReference = 1A9A0A1113F02D42905162DD /* ASALightStorm.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D574124317EB877F005E18C2 /* ASALightStorm Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D574125317EB877F005E18C2 /* Build configuration list for PBXNativeTarget "ASALightStorm Tests" */;
+			buildPhases = (
+				D574124017EB877F005E18C2 /* Sources */,
+				D574124117EB877F005E18C2 /* Frameworks */,
+				D574124217EB877F005E18C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D574125217EB877F005E18C2 /* PBXTargetDependency */,
+			);
+			name = "ASALightStorm Tests";
+			productName = "ASALightStorm Tests";
+			productReference = D574124417EB877F005E18C2 /* ASALightStorm Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D5B958C317E74B580001441C /* AppleDoc */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5B958DC17E74B580001441C /* Build configuration list for PBXNativeTarget "AppleDoc" */;
@@ -295,6 +368,11 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = AndrewShmig;
+				TargetAttributes = {
+					D574124317EB877F005E18C2 = {
+						TestTargetID = 1A9A0A9850BFEFF536BAE1AF;
+					};
+				};
 			};
 			buildConfigurationList = 1A9A02218A1E6B2BDCDA71A0 /* Build configuration list for PBXProject "ASALightStorm" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -310,6 +388,7 @@
 			targets = (
 				1A9A0A9850BFEFF536BAE1AF /* ASALightStorm */,
 				D5B958C317E74B580001441C /* AppleDoc */,
+				D574124317EB877F005E18C2 /* ASALightStorm Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -324,6 +403,14 @@
 				1A9A050146581539EE71F2D4 /* Default@2x.png in Resources */,
 				1A9A0C5EC6FB04C1000591E4 /* Default-568h@2x.png in Resources */,
 				1A9A0B04B51B31392ED88699 /* ASAViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D574124217EB877F005E18C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D574124D17EB877F005E18C2 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +460,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D574124017EB877F005E18C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D574124F17EB877F005E18C2 /* ASALightStorm_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5B958C017E74B580001441C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -383,6 +478,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D574125217EB877F005E18C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A9A0A9850BFEFF536BAE1AF /* ASALightStorm */;
+			targetProxy = D574125117EB877F005E18C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1A9A060A00A8A7E97E1F4D5F /* ASAViewController.xib */ = {
@@ -397,6 +500,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				1A9A0F066D850D4039123BDF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D574124B17EB877F005E18C2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D574124C17EB877F005E18C2 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -498,6 +609,67 @@
 			};
 			name = Debug;
 		};
+		D574125417EB877F005E18C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ASALightStorm.app/ASALightStorm";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASALightStorm Tests/ASALightStorm Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "ASALightStorm Tests/ASALightStorm Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		D574125517EB877F005E18C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ASALightStorm.app/ASALightStorm";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASALightStorm Tests/ASALightStorm Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "ASALightStorm Tests/ASALightStorm Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
 		D5B958DA17E74B580001441C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -542,6 +714,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D574125317EB877F005E18C2 /* Build configuration list for PBXNativeTarget "ASALightStorm Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D574125417EB877F005E18C2 /* Release */,
+				D574125517EB877F005E18C2 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		D5B958DC17E74B580001441C /* Build configuration list for PBXNativeTarget "AppleDoc" */ = {
 			isa = XCConfigurationList;

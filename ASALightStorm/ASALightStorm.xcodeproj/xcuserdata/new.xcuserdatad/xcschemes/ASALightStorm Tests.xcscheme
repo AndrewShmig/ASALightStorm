@@ -1,25 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
+   LastUpgradeVersion = "0500"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
-      <BuildActionEntries>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1A9A0A9850BFEFF536BAE1AF"
-               BuildableName = "ASALightStorm.app"
-               BlueprintName = "ASALightStorm"
-               ReferencedContainer = "container:ASALightStorm.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-      </BuildActionEntries>
    </BuildAction>
    <TestAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -34,16 +19,6 @@
                BlueprintIdentifier = "D574124317EB877F005E18C2"
                BuildableName = "ASALightStorm Tests.xctest"
                BlueprintName = "ASALightStorm Tests"
-               ReferencedContainer = "container:ASALightStorm.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D574125617EB87A7005E18C2"
-               BuildableName = "ASALightStorm Tests copy.xctest"
-               BlueprintName = "ASALightStorm Tests copy"
                ReferencedContainer = "container:ASALightStorm.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -77,6 +52,16 @@
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
+         <AdditionalOption
+            key = "OBJC_PRINT_EXCEPTIONS"
+            value = "YES"
+            isEnabled = "YES">
+         </AdditionalOption>
+         <AdditionalOption
+            key = "USERBREAK"
+            value = "1"
+            isEnabled = "YES">
+         </AdditionalOption>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ASALightStorm Tests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>ASALightStorm.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,21 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>1A9A0A9850BFEFF536BAE1AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D574122C17EB85BF005E18C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D574124317EB877F005E18C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D574125617EB87A7005E18C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
