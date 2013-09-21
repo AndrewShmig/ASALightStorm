@@ -26,6 +26,8 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 	
 	
 	
@@ -62,10 +64,14 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
 
 
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Свойства">Свойства</a></span></li>
 	
 </ul></li>
 
@@ -127,6 +133,14 @@
 					
 					
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Класс содержит методы для работы с Core Data.</p>
+					</div>
+					
+					
+					
 					
 					
 					<div class="section section-tasks">
@@ -134,28 +148,28 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
+						<a title="Свойства" name="task_Свойства"></a>
 						
-						
-
+<h3 class="subsubtitle task-title">Свойства</h3>
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/stormManagedObjectContext">&nbsp;&nbsp;stormManagedObjectContext</a></code>
-		
+		<span class="tooltip"><p>Среда управления объектами</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sharedStorm">+&nbsp;sharedStorm</a></code>
-		
+		<span class="tooltip"><p>Возвращает экземпляр класса ASALightStorm</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/saveStormManagedObjectContext">&ndash;&nbsp;saveStormManagedObjectContext</a></code>
-		
+		<span class="tooltip"><p>Сохраняет в локальное хранилище данные из среды управления объектами</p></span>
 	</span>
 	
 	
@@ -177,10 +191,35 @@
 	<h3 class="subsubtitle method-title">stormManagedObjectContext</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Среда управления объектами</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSManagedObjectContext *stormManagedObjectContext</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ASALightStorm.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 					</div>
@@ -196,10 +235,35 @@
 	<h3 class="subsubtitle method-title">sharedStorm</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает экземпляр класса ASALightStorm</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>+ (instancetype)sharedStorm</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ASALightStorm.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 					</div>
@@ -215,10 +279,40 @@
 	<h3 class="subsubtitle method-title">saveStormManagedObjectContext</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Сохраняет в локальное хранилище данные из среды управления объектами</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (BOOL)saveStormManagedObjectContext</code></div>
 
     
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES - удалось сохранить изменения, NO - произошла ошибка при сохранении.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ASALightStorm.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 					</div>

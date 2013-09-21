@@ -29,12 +29,25 @@
 
 @class ASALightStormProfile;
 
-
+/** Класс содержит методы для работы с Core Data.
+*/
 @interface ASALightStorm : NSObject
 
+/**
+@name Свойства
+*/
+/** Среда управления объектами
+*/
 @property (nonatomic, strong, readonly) NSManagedObjectContext *stormManagedObjectContext;
 
+/** Возвращает экземпляр класса ASALightStorm
+*/
 + (instancetype)sharedStorm;
+
+/** Сохраняет в локальное хранилище данные из среды управления объектами
+
+@return YES - удалось сохранить изменения, NO - произошла ошибка при сохранении.
+*/
 - (BOOL)saveStormManagedObjectContext;
 
 @end
