@@ -4,7 +4,8 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/ASALightStormProfile</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Класс предназначен для работы с профилями и связанными с профилем объектами
+(фильтрами, закладками, адБлоками и тд).</Abstract>
 			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>
 			
 			<NodeRef refid="3"/>
@@ -13,7 +14,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ASALightStormProfile/setProfile:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Объект профиля пользователя</Abstract>
 			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) CDProfile *profile</Declaration>
@@ -25,7 +26,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ASALightStormProfile/profile</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Объект профиля пользователя</Abstract>
 			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) CDProfile *profile</Declaration>
@@ -37,7 +38,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ASALightStormProfile/profile</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Объект профиля пользователя</Abstract>
 			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) CDProfile *profile</Declaration>
@@ -49,47 +50,76 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ASALightStormProfile/profileWithName:password:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Создание профиля(ей)</Abstract>
 			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
 			
-			<Declaration>+ (instancetype)profileWithName:(NSString *)name password:(NSString *)password</Declaration>
-			
-			
+			<Declaration>+ (id)profileWithName:(NSString *)name password:(NSString *)password</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">имя создаваемого профиля</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract type="html">пароль создаваемого профиля</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">объект профиля, либо nil, если профиль с таким именем уже существует</Abstract></ReturnValue>
 			<Anchor>//api/name/profileWithName:password:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ASALightStormProfile/profileWithName:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Создание профиля с указанным именем. В качестве пароля устанавливается пустая строка.</Abstract>
 			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
 			
-			<Declaration>+ (instancetype)profileWithName:(NSString *)name</Declaration>
-			
-			
+			<Declaration>+ (id)profileWithName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">наименование профиля</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">объект профиля, либо nil, если профиль с таким именем уже существует</Abstract></ReturnValue>
 			<Anchor>//api/name/profileWithName:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ASALightStormProfile/logInWithName:password:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Осуществляет вход в профиль с указанным именем и паролем.</Abstract>
 			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
 			
-			<Declaration>+ (instancetype)logInWithName:(NSString *)name password:(NSString *)password</Declaration>
-			
-			
+			<Declaration>+ (id)logInWithName:(NSString *)name password:(NSString *)password</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">наименование профиля в который осуществляется вход</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract type="html">пароль профиля в который осуществляется вход</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">объект профиля, либо nil, если войти в профиль с таким именем или паролем не удалось</Abstract></ReturnValue>
 			<Anchor>//api/name/logInWithName:password:</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ASALightStormProfile/destroyProfileWithName:password:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Удаляет профиль и все связанные данные с профилем</Abstract>
 			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
 			
 			<Declaration>+ (void)destroyProfileWithName:(NSString *)name password:(NSString *)password</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">наименование профиля</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract type="html">пароль указываемого профиля</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/destroyProfileWithName:password:</Anchor>
             <NodeRef refid="3"/>
@@ -97,11 +127,16 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ASALightStormProfile/destroyProfileWithName:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Удаляет профиль с указанным именем. В качестве пароля используется пустая строка.</Abstract>
 			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
 			
 			<Declaration>+ (void)destroyProfileWithName:(NSString *)name</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">наименование профиля</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/destroyProfileWithName:</Anchor>
             <NodeRef refid="3"/>
@@ -109,11 +144,16 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ASALightStormProfile/destroyProfile:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Удаляет переданный объект профиля и все связанные с ним данные</Abstract>
 			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
 			
 			<Declaration>+ (void)destroyProfile:(ASALightStormProfile *)profile</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>profile</Name>
+					<Abstract type="html">объект профиля</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/destroyProfile:</Anchor>
             <NodeRef refid="3"/>
@@ -121,7 +161,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ASALightStormProfile/destroyAll</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Удаляет все профили и связанные с ними данные</Abstract>
 			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
 			
 			<Declaration>+ (void)destroyAll</Declaration>
@@ -133,7 +173,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ASALightStormProfile/destroy</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Удаляет профиль, который представлен текущим экземпляром класса ASALightStormProfile</Abstract>
 			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
 			
 			<Declaration>- (void)destroy</Declaration>
@@ -145,12 +185,12 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ASALightStormProfile/profiles</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Список все профилей находящихся в хранилище</Abstract>
 			<DeclaredIn>ASALightStormProfile.h</DeclaredIn>			
 			
 			<Declaration>+ (NSArray *)profiles</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">массив с объектами типа ASALightStormProfile</Abstract></ReturnValue>
 			<Anchor>//api/name/profiles</Anchor>
             <NodeRef refid="3"/>
 		</Token>

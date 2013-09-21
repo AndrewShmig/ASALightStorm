@@ -26,6 +26,8 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 	
 	
 	
@@ -76,10 +78,22 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
 
 
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Свойства">Свойства</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Создание нового профиля">Создание нового профиля</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Вход в профиль(и)">Вход в профиль(и)</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Удаление профиля(ей)">Удаление профиля(ей)</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Список профилей">Список профилей</a></span></li>
 	
 </ul></li>
 
@@ -155,6 +169,18 @@
 					
 					
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Класс предназначен для работы с профилями и связанными с профилем объектами
+(фильтрами, закладками, адБлоками и тд).</p>
+
+<p>Перед тем, как начать работу с <a href="../Classes/ASALightStorm.html">ASALightStorm</a> необходимо создать профиль, либо
+войти в уже существующий.</p>
+					</div>
+					
+					
+					
 					
 					
 					<div class="section section-tasks">
@@ -162,77 +188,109 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						
-						
+						<a title="Свойства" name="task_Свойства"></a>
+						<h3 class="subsubtitle task-title">Свойства</h3>
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/profile">&nbsp;&nbsp;profile</a></code>
-		
+		<span class="tooltip"><p>Объект профиля пользователя</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Создание нового профиля" name="task_Создание нового профиля"></a>
+						<h3 class="subsubtitle task-title">Создание нового профиля</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/profileWithName:password:">+&nbsp;profileWithName:password:</a></code>
-		
+		<span class="tooltip"><p>Создание профиля(ей)</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/profileWithName:">+&nbsp;profileWithName:</a></code>
-		
+		<span class="tooltip"><p>Создание профиля с указанным именем. В качестве пароля устанавливается пустая строка.</p></span>
 	</span>
 	
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Вход в профиль(и)" name="task_Вход в профиль(и)"></a>
+						<h3 class="subsubtitle task-title">Вход в профиль(и)</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/logInWithName:password:">+&nbsp;logInWithName:password:</a></code>
-		
+		<span class="tooltip"><p>Осуществляет вход в профиль с указанным именем и паролем.</p></span>
 	</span>
 	
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Удаление профиля(ей)" name="task_Удаление профиля(ей)"></a>
+						<h3 class="subsubtitle task-title">Удаление профиля(ей)</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/destroyProfileWithName:password:">+&nbsp;destroyProfileWithName:password:</a></code>
-		
+		<span class="tooltip"><p>Удаляет профиль и все связанные данные с профилем</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/destroyProfileWithName:">+&nbsp;destroyProfileWithName:</a></code>
-		
+		<span class="tooltip"><p>Удаляет профиль с указанным именем. В качестве пароля используется пустая строка.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/destroyProfile:">+&nbsp;destroyProfile:</a></code>
-		
+		<span class="tooltip"><p>Удаляет переданный объект профиля и все связанные с ним данные</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/destroyAll">+&nbsp;destroyAll</a></code>
-		
+		<span class="tooltip"><p>Удаляет все профили и связанные с ними данные</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/destroy">&ndash;&nbsp;destroy</a></code>
-		
+		<span class="tooltip"><p>Удаляет профиль, который представлен текущим экземпляром класса ASALightStormProfile</p></span>
 	</span>
 	
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Список профилей" name="task_Список профилей"></a>
+						<h3 class="subsubtitle task-title">Список профилей</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/profiles">+&nbsp;profiles</a></code>
-		
+		<span class="tooltip"><p>Список все профилей находящихся в хранилище</p></span>
 	</span>
 	
 	
@@ -254,10 +312,35 @@
 	<h3 class="subsubtitle method-title">profile</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Объект профиля пользователя</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) CDProfile *profile</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ASALightStormProfile.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 					</div>
@@ -273,10 +356,35 @@
 	<h3 class="subsubtitle method-title">destroyAll</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Удаляет все профили и связанные с ними данные</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>+ (void)destroyAll</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ASALightStormProfile.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -284,10 +392,45 @@
 	<h3 class="subsubtitle method-title">destroyProfile:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Удаляет переданный объект профиля и все связанные с ним данные</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>+ (void)destroyProfile:(ASALightStormProfile *)<em>profile</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>profile</em></dt>
+			<dd><p>объект профиля</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ASALightStormProfile.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -295,10 +438,45 @@
 	<h3 class="subsubtitle method-title">destroyProfileWithName:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Удаляет профиль с указанным именем. В качестве пароля используется пустая строка.</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>+ (void)destroyProfileWithName:(NSString *)<em>name</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>наименование профиля</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ASALightStormProfile.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -306,10 +484,56 @@
 	<h3 class="subsubtitle method-title">destroyProfileWithName:password:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Удаляет профиль и все связанные данные с профилем</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>+ (void)destroyProfileWithName:(NSString *)<em>name</em> password:(NSString *)<em>password</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>наименование профиля</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>password</em></dt>
+			<dd><p>пароль указываемого профиля</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Профиль будет удалён только в том случае, если наименование профиля и пароль совпадают
+с теми данными, которые находятся в БД</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ASALightStormProfile.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -317,10 +541,55 @@
 	<h3 class="subsubtitle method-title">logInWithName:password:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Осуществляет вход в профиль с указанным именем и паролем.</p>
+	</div>		
+	
+    
 
-	<div class="method-subsection method-declaration"><code>+ (instancetype)logInWithName:(NSString *)<em>name</em> password:(NSString *)<em>password</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (id)logInWithName:(NSString *)<em>name</em> password:(NSString *)<em>password</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>наименование профиля в который осуществляется вход</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>password</em></dt>
+			<dd><p>пароль профиля в который осуществляется вход</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>объект профиля, либо nil, если войти в профиль с таким именем или паролем не удалось</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ASALightStormProfile.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -328,10 +597,50 @@
 	<h3 class="subsubtitle method-title">profileWithName:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Создание профиля с указанным именем. В качестве пароля устанавливается пустая строка.</p>
+	</div>		
+	
+    
 
-	<div class="method-subsection method-declaration"><code>+ (instancetype)profileWithName:(NSString *)<em>name</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (id)profileWithName:(NSString *)<em>name</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>наименование профиля</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>объект профиля, либо nil, если профиль с таким именем уже существует</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ASALightStormProfile.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -339,10 +648,55 @@
 	<h3 class="subsubtitle method-title">profileWithName:password:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Создание профиля(ей)</p>
+	</div>		
+	
+    
 
-	<div class="method-subsection method-declaration"><code>+ (instancetype)profileWithName:(NSString *)<em>name</em> password:(NSString *)<em>password</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (id)profileWithName:(NSString *)<em>name</em> password:(NSString *)<em>password</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>имя создаваемого профиля</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>password</em></dt>
+			<dd><p>пароль создаваемого профиля</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>объект профиля, либо nil, если профиль с таким именем уже существует</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ASALightStormProfile.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -350,10 +704,40 @@
 	<h3 class="subsubtitle method-title">profiles</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Список все профилей находящихся в хранилище</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>+ (NSArray *)profiles</code></div>
 
     
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>массив с объектами типа ASALightStormProfile</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ASALightStormProfile.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 					</div>
@@ -369,10 +753,35 @@
 	<h3 class="subsubtitle method-title">destroy</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Удаляет профиль, который представлен текущим экземпляром класса ASALightStormProfile</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)destroy</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ASALightStormProfile.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 					</div>
@@ -388,7 +797,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-09-19)</span><br />
+						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-09-21)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						
