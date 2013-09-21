@@ -143,7 +143,6 @@
 				1A9A08BCCD2C2CDDD8429300 /* Frameworks */,
 				1A9A06F5BD0A1EC01724B31E /* ASALightStorm */,
 				1A9A093E8E2A26F120BAF9E4 /* ASALightStormSourceCode */,
-				D574126517EB87A8005E18C2 /* ASALightStorm Tests copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -265,6 +264,7 @@
 		D574124817EB877F005E18C2 /* ASALightStorm Tests */ = {
 			isa = PBXGroup;
 			children = (
+				D574126517EB87A8005E18C2 /* ASALightStorm Tests copy-Info.plist */,
 				D574124917EB877F005E18C2 /* Supporting Files */,
 				D575F32117EDC68900DEB59B /* ASALightStormProfile_Test.m */,
 			);
