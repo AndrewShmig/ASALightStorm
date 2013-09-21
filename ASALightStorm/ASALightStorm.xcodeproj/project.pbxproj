@@ -30,6 +30,54 @@
 		D574124717EB877F005E18C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A01A481264EC57E5F1437 /* UIKit.framework */; };
 		D574124D17EB877F005E18C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D574124B17EB877F005E18C2 /* InfoPlist.strings */; };
 		D575F32217EDC68900DEB59B /* ASALightStormProfile_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F32117EDC68900DEB59B /* ASALightStormProfile_Test.m */; };
+		D575F32B17EDE0CA00DEB59B /* ASALightStormProfile+Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F32A17EDE0CA00DEB59B /* ASALightStormProfile+Proxy.m */; };
+		D575F32C17EDE0CA00DEB59B /* ASALightStormProfile+Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F32A17EDE0CA00DEB59B /* ASALightStormProfile+Proxy.m */; };
+		D575F32D17EDE0CA00DEB59B /* ASALightStormProfile+Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F32A17EDE0CA00DEB59B /* ASALightStormProfile+Proxy.m */; };
+		D575F33117EDE13C00DEB59B /* ASALightStormProfile+Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F33017EDE13C00DEB59B /* ASALightStormProfile+Filter.m */; };
+		D575F33217EDE13C00DEB59B /* ASALightStormProfile+Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F33017EDE13C00DEB59B /* ASALightStormProfile+Filter.m */; };
+		D575F33317EDE13C00DEB59B /* ASALightStormProfile+Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F33017EDE13C00DEB59B /* ASALightStormProfile+Filter.m */; };
+		D575F33617EDE15300DEB59B /* ASALightStormProfile+AdBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F33517EDE15300DEB59B /* ASALightStormProfile+AdBlock.m */; };
+		D575F33717EDE15300DEB59B /* ASALightStormProfile+AdBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F33517EDE15300DEB59B /* ASALightStormProfile+AdBlock.m */; };
+		D575F33817EDE15300DEB59B /* ASALightStormProfile+AdBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F33517EDE15300DEB59B /* ASALightStormProfile+AdBlock.m */; };
+		D575F33B17EDE16700DEB59B /* ASALightStormProfile+Tab.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F33A17EDE16700DEB59B /* ASALightStormProfile+Tab.m */; };
+		D575F33C17EDE16700DEB59B /* ASALightStormProfile+Tab.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F33A17EDE16700DEB59B /* ASALightStormProfile+Tab.m */; };
+		D575F33D17EDE16700DEB59B /* ASALightStormProfile+Tab.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F33A17EDE16700DEB59B /* ASALightStormProfile+Tab.m */; };
+		D575F34017EDE19700DEB59B /* ASALightStormProfile+Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F33F17EDE19700DEB59B /* ASALightStormProfile+Bookmark.m */; };
+		D575F34117EDE19700DEB59B /* ASALightStormProfile+Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F33F17EDE19700DEB59B /* ASALightStormProfile+Bookmark.m */; };
+		D575F34217EDE19700DEB59B /* ASALightStormProfile+Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F33F17EDE19700DEB59B /* ASALightStormProfile+Bookmark.m */; };
+		D575F34517EDE1A100DEB59B /* ASALightStormProfile+Download.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F34417EDE1A100DEB59B /* ASALightStormProfile+Download.m */; };
+		D575F34617EDE1A100DEB59B /* ASALightStormProfile+Download.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F34417EDE1A100DEB59B /* ASALightStormProfile+Download.m */; };
+		D575F34717EDE1A100DEB59B /* ASALightStormProfile+Download.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F34417EDE1A100DEB59B /* ASALightStormProfile+Download.m */; };
+		D575F35517EDE27F00DEB59B /* ASALightStormAdBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F35417EDE27F00DEB59B /* ASALightStormAdBlock.m */; };
+		D575F35617EDE27F00DEB59B /* ASALightStormAdBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F35417EDE27F00DEB59B /* ASALightStormAdBlock.m */; };
+		D575F35717EDE27F00DEB59B /* ASALightStormAdBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F35417EDE27F00DEB59B /* ASALightStormAdBlock.m */; };
+		D575F35A17EDE29000DEB59B /* ASALightStormFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F35917EDE29000DEB59B /* ASALightStormFilter.m */; };
+		D575F35B17EDE29000DEB59B /* ASALightStormFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F35917EDE29000DEB59B /* ASALightStormFilter.m */; };
+		D575F35C17EDE29000DEB59B /* ASALightStormFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F35917EDE29000DEB59B /* ASALightStormFilter.m */; };
+		D575F35F17EDE29C00DEB59B /* ASALightStormProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F35E17EDE29C00DEB59B /* ASALightStormProxy.m */; };
+		D575F36017EDE29C00DEB59B /* ASALightStormProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F35E17EDE29C00DEB59B /* ASALightStormProxy.m */; };
+		D575F36117EDE29C00DEB59B /* ASALightStormProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F35E17EDE29C00DEB59B /* ASALightStormProxy.m */; };
+		D575F36417EDE2A800DEB59B /* ASALightStormTab.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F36317EDE2A800DEB59B /* ASALightStormTab.m */; };
+		D575F36517EDE2A800DEB59B /* ASALightStormTab.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F36317EDE2A800DEB59B /* ASALightStormTab.m */; };
+		D575F36617EDE2A800DEB59B /* ASALightStormTab.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F36317EDE2A800DEB59B /* ASALightStormTab.m */; };
+		D575F36917EDE2B500DEB59B /* ASALightStormBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F36817EDE2B500DEB59B /* ASALightStormBookmark.m */; };
+		D575F36A17EDE2B500DEB59B /* ASALightStormBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F36817EDE2B500DEB59B /* ASALightStormBookmark.m */; };
+		D575F36B17EDE2B500DEB59B /* ASALightStormBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F36817EDE2B500DEB59B /* ASALightStormBookmark.m */; };
+		D575F36E17EDE2C000DEB59B /* ASALightStormDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F36D17EDE2C000DEB59B /* ASALightStormDownload.m */; };
+		D575F36F17EDE2C000DEB59B /* ASALightStormDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F36D17EDE2C000DEB59B /* ASALightStormDownload.m */; };
+		D575F37017EDE2C000DEB59B /* ASALightStormDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F36D17EDE2C000DEB59B /* ASALightStormDownload.m */; };
+		D575F37317EDE2CD00DEB59B /* ASALightStormWebPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F37217EDE2CD00DEB59B /* ASALightStormWebPage.m */; };
+		D575F37417EDE2CD00DEB59B /* ASALightStormWebPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F37217EDE2CD00DEB59B /* ASALightStormWebPage.m */; };
+		D575F37517EDE2CD00DEB59B /* ASALightStormWebPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F37217EDE2CD00DEB59B /* ASALightStormWebPage.m */; };
+		D575F37817EDE2E300DEB59B /* ASALightStormUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F37717EDE2E300DEB59B /* ASALightStormUserData.m */; };
+		D575F37917EDE2E300DEB59B /* ASALightStormUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F37717EDE2E300DEB59B /* ASALightStormUserData.m */; };
+		D575F37A17EDE2E300DEB59B /* ASALightStormUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F37717EDE2E300DEB59B /* ASALightStormUserData.m */; };
+		D575F37D17EDE2FD00DEB59B /* ASALightStormSticker.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F37C17EDE2FD00DEB59B /* ASALightStormSticker.m */; };
+		D575F37E17EDE2FD00DEB59B /* ASALightStormSticker.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F37C17EDE2FD00DEB59B /* ASALightStormSticker.m */; };
+		D575F37F17EDE2FD00DEB59B /* ASALightStormSticker.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F37C17EDE2FD00DEB59B /* ASALightStormSticker.m */; };
+		D575F38217EDE30E00DEB59B /* ASALightStormOfflineSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F38117EDE30E00DEB59B /* ASALightStormOfflineSnapshot.m */; };
+		D575F38317EDE30E00DEB59B /* ASALightStormOfflineSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F38117EDE30E00DEB59B /* ASALightStormOfflineSnapshot.m */; };
+		D575F38417EDE30E00DEB59B /* ASALightStormOfflineSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D575F38117EDE30E00DEB59B /* ASALightStormOfflineSnapshot.m */; };
 		D5B958C517E74B580001441C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A01A481264EC57E5F1437 /* UIKit.framework */; };
 		D5B958C617E74B580001441C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A018636A06F6A9BB6C2E6 /* Foundation.framework */; };
 		D5B958C717E74B580001441C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A010ED508393CA804329E /* CoreGraphics.framework */; };
@@ -87,6 +135,38 @@
 		D574125017EB877F005E18C2 /* ASALightStorm Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASALightStorm Tests-Prefix.pch"; sourceTree = "<group>"; };
 		D574126517EB87A8005E18C2 /* ASALightStorm Tests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ASALightStorm Tests copy-Info.plist"; path = "/Users/new/Documents/Development/ASALightStorm/ASALightStorm/ASALightStorm Tests copy-Info.plist"; sourceTree = "<absolute>"; };
 		D575F32117EDC68900DEB59B /* ASALightStormProfile_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASALightStormProfile_Test.m; sourceTree = "<group>"; };
+		D575F32917EDE0CA00DEB59B /* ASALightStormProfile+Proxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASALightStormProfile+Proxy.h"; sourceTree = "<group>"; };
+		D575F32A17EDE0CA00DEB59B /* ASALightStormProfile+Proxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ASALightStormProfile+Proxy.m"; sourceTree = "<group>"; };
+		D575F32F17EDE13C00DEB59B /* ASALightStormProfile+Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASALightStormProfile+Filter.h"; sourceTree = "<group>"; };
+		D575F33017EDE13C00DEB59B /* ASALightStormProfile+Filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ASALightStormProfile+Filter.m"; sourceTree = "<group>"; };
+		D575F33417EDE15300DEB59B /* ASALightStormProfile+AdBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASALightStormProfile+AdBlock.h"; sourceTree = "<group>"; };
+		D575F33517EDE15300DEB59B /* ASALightStormProfile+AdBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ASALightStormProfile+AdBlock.m"; sourceTree = "<group>"; };
+		D575F33917EDE16700DEB59B /* ASALightStormProfile+Tab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASALightStormProfile+Tab.h"; sourceTree = "<group>"; };
+		D575F33A17EDE16700DEB59B /* ASALightStormProfile+Tab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ASALightStormProfile+Tab.m"; sourceTree = "<group>"; };
+		D575F33E17EDE19700DEB59B /* ASALightStormProfile+Bookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASALightStormProfile+Bookmark.h"; sourceTree = "<group>"; };
+		D575F33F17EDE19700DEB59B /* ASALightStormProfile+Bookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ASALightStormProfile+Bookmark.m"; sourceTree = "<group>"; };
+		D575F34317EDE1A100DEB59B /* ASALightStormProfile+Download.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASALightStormProfile+Download.h"; sourceTree = "<group>"; };
+		D575F34417EDE1A100DEB59B /* ASALightStormProfile+Download.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ASALightStormProfile+Download.m"; sourceTree = "<group>"; };
+		D575F35317EDE27F00DEB59B /* ASALightStormAdBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASALightStormAdBlock.h; sourceTree = "<group>"; };
+		D575F35417EDE27F00DEB59B /* ASALightStormAdBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASALightStormAdBlock.m; sourceTree = "<group>"; };
+		D575F35817EDE29000DEB59B /* ASALightStormFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASALightStormFilter.h; sourceTree = "<group>"; };
+		D575F35917EDE29000DEB59B /* ASALightStormFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASALightStormFilter.m; sourceTree = "<group>"; };
+		D575F35D17EDE29C00DEB59B /* ASALightStormProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASALightStormProxy.h; sourceTree = "<group>"; };
+		D575F35E17EDE29C00DEB59B /* ASALightStormProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASALightStormProxy.m; sourceTree = "<group>"; };
+		D575F36217EDE2A800DEB59B /* ASALightStormTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASALightStormTab.h; sourceTree = "<group>"; };
+		D575F36317EDE2A800DEB59B /* ASALightStormTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASALightStormTab.m; sourceTree = "<group>"; };
+		D575F36717EDE2B500DEB59B /* ASALightStormBookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASALightStormBookmark.h; sourceTree = "<group>"; };
+		D575F36817EDE2B500DEB59B /* ASALightStormBookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASALightStormBookmark.m; sourceTree = "<group>"; };
+		D575F36C17EDE2C000DEB59B /* ASALightStormDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASALightStormDownload.h; sourceTree = "<group>"; };
+		D575F36D17EDE2C000DEB59B /* ASALightStormDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASALightStormDownload.m; sourceTree = "<group>"; };
+		D575F37117EDE2CD00DEB59B /* ASALightStormWebPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASALightStormWebPage.h; sourceTree = "<group>"; };
+		D575F37217EDE2CD00DEB59B /* ASALightStormWebPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASALightStormWebPage.m; sourceTree = "<group>"; };
+		D575F37617EDE2E300DEB59B /* ASALightStormUserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASALightStormUserData.h; sourceTree = "<group>"; };
+		D575F37717EDE2E300DEB59B /* ASALightStormUserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASALightStormUserData.m; sourceTree = "<group>"; };
+		D575F37B17EDE2FD00DEB59B /* ASALightStormSticker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASALightStormSticker.h; sourceTree = "<group>"; };
+		D575F37C17EDE2FD00DEB59B /* ASALightStormSticker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASALightStormSticker.m; sourceTree = "<group>"; };
+		D575F38017EDE30E00DEB59B /* ASALightStormOfflineSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASALightStormOfflineSnapshot.h; sourceTree = "<group>"; };
+		D575F38117EDE30E00DEB59B /* ASALightStormOfflineSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASALightStormOfflineSnapshot.m; sourceTree = "<group>"; };
 		D5B958C417E74B580001441C /* AppleDoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleDoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B958CA17E74B580001441C /* AppleDoc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppleDoc-Info.plist"; sourceTree = "<group>"; };
 		D5B958CC17E74B580001441C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -137,11 +217,9 @@
 		1A9A017F2DF8A28FDC31A0FA = {
 			isa = PBXGroup;
 			children = (
-				D5B958C817E74B580001441C /* AppleDoc */,
-				D574124817EB877F005E18C2 /* ASALightStorm Tests */,
+				D575F32E17EDE10B00DEB59B /* Targets */,
 				1A9A068249A3B2B2859D7977 /* Products */,
 				1A9A08BCCD2C2CDDD8429300 /* Frameworks */,
-				1A9A06F5BD0A1EC01724B31E /* ASALightStorm */,
 				1A9A093E8E2A26F120BAF9E4 /* ASALightStormSourceCode */,
 			);
 			sourceTree = "<group>";
@@ -149,6 +227,16 @@
 		1A9A01FCB5AE2F7FEA4AAAF7 /* ASALightStorm */ = {
 			isa = PBXGroup;
 			children = (
+				D575F35217EDE24800DEB59B /* ASALightStormOfflineSnapshot */,
+				D575F35117EDE23F00DEB59B /* ASALightStormSticker */,
+				D575F35017EDE23100DEB59B /* ASALightStormUserData */,
+				D575F34F17EDE22700DEB59B /* ASALightStormWebPage */,
+				D575F34E17EDE21C00DEB59B /* ASALightStormDownload */,
+				D575F34D17EDE21200DEB59B /* ASALightStormBookmark */,
+				D575F34C17EDE20A00DEB59B /* ASALightStormTab */,
+				D575F34B17EDE1FD00DEB59B /* ASALightStormProxy */,
+				D575F34A17EDE1EA00DEB59B /* ASALightStormFilter */,
+				D575F34917EDE1E100DEB59B /* ASALightStormAdBlock */,
 				1A9A0EFD9359D162006865A7 /* ASALightStorm.m */,
 				1A9A0B065CC7BE93C1014DF2 /* ASALightStorm.h */,
 				1A9A0DEC34DA5365A4FEE0DB /* ASALightStormProfile */,
@@ -248,6 +336,18 @@
 			children = (
 				1A9A0FD8E84D647EEEEB3576 /* ASALightStormProfile.m */,
 				1A9A08AE04B550B95DF8C846 /* ASALightStormProfile.h */,
+				D575F32917EDE0CA00DEB59B /* ASALightStormProfile+Proxy.h */,
+				D575F32A17EDE0CA00DEB59B /* ASALightStormProfile+Proxy.m */,
+				D575F32F17EDE13C00DEB59B /* ASALightStormProfile+Filter.h */,
+				D575F33017EDE13C00DEB59B /* ASALightStormProfile+Filter.m */,
+				D575F33417EDE15300DEB59B /* ASALightStormProfile+AdBlock.h */,
+				D575F33517EDE15300DEB59B /* ASALightStormProfile+AdBlock.m */,
+				D575F33917EDE16700DEB59B /* ASALightStormProfile+Tab.h */,
+				D575F33A17EDE16700DEB59B /* ASALightStormProfile+Tab.m */,
+				D575F33E17EDE19700DEB59B /* ASALightStormProfile+Bookmark.h */,
+				D575F33F17EDE19700DEB59B /* ASALightStormProfile+Bookmark.m */,
+				D575F34317EDE1A100DEB59B /* ASALightStormProfile+Download.h */,
+				D575F34417EDE1A100DEB59B /* ASALightStormProfile+Download.m */,
 			);
 			path = ASALightStormProfile;
 			sourceTree = "<group>";
@@ -279,6 +379,106 @@
 				D574125017EB877F005E18C2 /* ASALightStorm Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D575F32E17EDE10B00DEB59B /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A06F5BD0A1EC01724B31E /* ASALightStorm */,
+				D5B958C817E74B580001441C /* AppleDoc */,
+				D574124817EB877F005E18C2 /* ASALightStorm Tests */,
+			);
+			name = Targets;
+			sourceTree = "<group>";
+		};
+		D575F34917EDE1E100DEB59B /* ASALightStormAdBlock */ = {
+			isa = PBXGroup;
+			children = (
+				D575F35317EDE27F00DEB59B /* ASALightStormAdBlock.h */,
+				D575F35417EDE27F00DEB59B /* ASALightStormAdBlock.m */,
+			);
+			name = ASALightStormAdBlock;
+			sourceTree = "<group>";
+		};
+		D575F34A17EDE1EA00DEB59B /* ASALightStormFilter */ = {
+			isa = PBXGroup;
+			children = (
+				D575F35817EDE29000DEB59B /* ASALightStormFilter.h */,
+				D575F35917EDE29000DEB59B /* ASALightStormFilter.m */,
+			);
+			name = ASALightStormFilter;
+			sourceTree = "<group>";
+		};
+		D575F34B17EDE1FD00DEB59B /* ASALightStormProxy */ = {
+			isa = PBXGroup;
+			children = (
+				D575F35D17EDE29C00DEB59B /* ASALightStormProxy.h */,
+				D575F35E17EDE29C00DEB59B /* ASALightStormProxy.m */,
+			);
+			name = ASALightStormProxy;
+			sourceTree = "<group>";
+		};
+		D575F34C17EDE20A00DEB59B /* ASALightStormTab */ = {
+			isa = PBXGroup;
+			children = (
+				D575F36217EDE2A800DEB59B /* ASALightStormTab.h */,
+				D575F36317EDE2A800DEB59B /* ASALightStormTab.m */,
+			);
+			name = ASALightStormTab;
+			sourceTree = "<group>";
+		};
+		D575F34D17EDE21200DEB59B /* ASALightStormBookmark */ = {
+			isa = PBXGroup;
+			children = (
+				D575F36717EDE2B500DEB59B /* ASALightStormBookmark.h */,
+				D575F36817EDE2B500DEB59B /* ASALightStormBookmark.m */,
+			);
+			name = ASALightStormBookmark;
+			sourceTree = "<group>";
+		};
+		D575F34E17EDE21C00DEB59B /* ASALightStormDownload */ = {
+			isa = PBXGroup;
+			children = (
+				D575F36C17EDE2C000DEB59B /* ASALightStormDownload.h */,
+				D575F36D17EDE2C000DEB59B /* ASALightStormDownload.m */,
+			);
+			name = ASALightStormDownload;
+			sourceTree = "<group>";
+		};
+		D575F34F17EDE22700DEB59B /* ASALightStormWebPage */ = {
+			isa = PBXGroup;
+			children = (
+				D575F37117EDE2CD00DEB59B /* ASALightStormWebPage.h */,
+				D575F37217EDE2CD00DEB59B /* ASALightStormWebPage.m */,
+			);
+			name = ASALightStormWebPage;
+			sourceTree = "<group>";
+		};
+		D575F35017EDE23100DEB59B /* ASALightStormUserData */ = {
+			isa = PBXGroup;
+			children = (
+				D575F37617EDE2E300DEB59B /* ASALightStormUserData.h */,
+				D575F37717EDE2E300DEB59B /* ASALightStormUserData.m */,
+			);
+			name = ASALightStormUserData;
+			sourceTree = "<group>";
+		};
+		D575F35117EDE23F00DEB59B /* ASALightStormSticker */ = {
+			isa = PBXGroup;
+			children = (
+				D575F37B17EDE2FD00DEB59B /* ASALightStormSticker.h */,
+				D575F37C17EDE2FD00DEB59B /* ASALightStormSticker.m */,
+			);
+			name = ASALightStormSticker;
+			sourceTree = "<group>";
+		};
+		D575F35217EDE24800DEB59B /* ASALightStormOfflineSnapshot */ = {
+			isa = PBXGroup;
+			children = (
+				D575F38017EDE30E00DEB59B /* ASALightStormOfflineSnapshot.h */,
+				D575F38117EDE30E00DEB59B /* ASALightStormOfflineSnapshot.m */,
+			);
+			name = ASALightStormOfflineSnapshot;
 			sourceTree = "<group>";
 		};
 		D5B958C817E74B580001441C /* AppleDoc */ = {
@@ -449,13 +649,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D575F37D17EDE2FD00DEB59B /* ASALightStormSticker.m in Sources */,
+				D575F35A17EDE29000DEB59B /* ASALightStormFilter.m in Sources */,
+				D575F33117EDE13C00DEB59B /* ASALightStormProfile+Filter.m in Sources */,
 				1A9A0167DDBA3CEF52C10F51 /* main.m in Sources */,
+				D575F32B17EDE0CA00DEB59B /* ASALightStormProfile+Proxy.m in Sources */,
+				D575F35517EDE27F00DEB59B /* ASALightStormAdBlock.m in Sources */,
+				D575F33617EDE15300DEB59B /* ASALightStormProfile+AdBlock.m in Sources */,
 				1A9A0BBDC945A3482BFEA553 /* ASAAppDelegate.m in Sources */,
+				D575F36417EDE2A800DEB59B /* ASALightStormTab.m in Sources */,
 				1A9A0A6293257F63900B9ACB /* ASAViewController.m in Sources */,
+				D575F37817EDE2E300DEB59B /* ASALightStormUserData.m in Sources */,
 				1A9A05DC35C417B6B3EBCF6D /* ASALightStorm.m in Sources */,
+				D575F36917EDE2B500DEB59B /* ASALightStormBookmark.m in Sources */,
+				D575F36E17EDE2C000DEB59B /* ASALightStormDownload.m in Sources */,
 				1A9A0427462184C3CF8F1587 /* LightStormDataModel.xcdatamodeld in Sources */,
 				1A9A0286A6344409D4F23138 /* CDProfile.m in Sources */,
+				D575F33B17EDE16700DEB59B /* ASALightStormProfile+Tab.m in Sources */,
+				D575F34017EDE19700DEB59B /* ASALightStormProfile+Bookmark.m in Sources */,
+				D575F37317EDE2CD00DEB59B /* ASALightStormWebPage.m in Sources */,
+				D575F34517EDE1A100DEB59B /* ASALightStormProfile+Download.m in Sources */,
+				D575F38217EDE30E00DEB59B /* ASALightStormOfflineSnapshot.m in Sources */,
 				1A9A0D2CBB9666F9EE4B7073 /* ASALightStormProfile.m in Sources */,
+				D575F35F17EDE29C00DEB59B /* ASALightStormProxy.m in Sources */,
 				1A9A0F2493E2DD746F1093A4 /* NSString+MD5.m in Sources */,
 				1A9A033455E9719933CB0A06 /* NSString+SHA512.m in Sources */,
 			);
@@ -465,7 +681,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D575F38417EDE30E00DEB59B /* ASALightStormOfflineSnapshot.m in Sources */,
+				D575F34717EDE1A100DEB59B /* ASALightStormProfile+Download.m in Sources */,
 				D575F32217EDC68900DEB59B /* ASALightStormProfile_Test.m in Sources */,
+				D575F32D17EDE0CA00DEB59B /* ASALightStormProfile+Proxy.m in Sources */,
+				D575F35C17EDE29000DEB59B /* ASALightStormFilter.m in Sources */,
+				D575F35717EDE27F00DEB59B /* ASALightStormAdBlock.m in Sources */,
+				D575F37A17EDE2E300DEB59B /* ASALightStormUserData.m in Sources */,
+				D575F33D17EDE16700DEB59B /* ASALightStormProfile+Tab.m in Sources */,
+				D575F36B17EDE2B500DEB59B /* ASALightStormBookmark.m in Sources */,
+				D575F37F17EDE2FD00DEB59B /* ASALightStormSticker.m in Sources */,
+				D575F33317EDE13C00DEB59B /* ASALightStormProfile+Filter.m in Sources */,
+				D575F36617EDE2A800DEB59B /* ASALightStormTab.m in Sources */,
+				D575F36117EDE29C00DEB59B /* ASALightStormProxy.m in Sources */,
+				D575F34217EDE19700DEB59B /* ASALightStormProfile+Bookmark.m in Sources */,
+				D575F37017EDE2C000DEB59B /* ASALightStormDownload.m in Sources */,
+				D575F37517EDE2CD00DEB59B /* ASALightStormWebPage.m in Sources */,
+				D575F33817EDE15300DEB59B /* ASALightStormProfile+AdBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,7 +705,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D575F34617EDE1A100DEB59B /* ASALightStormProfile+Download.m in Sources */,
+				D575F36A17EDE2B500DEB59B /* ASALightStormBookmark.m in Sources */,
+				D575F33217EDE13C00DEB59B /* ASALightStormProfile+Filter.m in Sources */,
+				D575F35B17EDE29000DEB59B /* ASALightStormFilter.m in Sources */,
+				D575F36F17EDE2C000DEB59B /* ASALightStormDownload.m in Sources */,
 				D5B958CF17E74B580001441C /* main.m in Sources */,
+				D575F37E17EDE2FD00DEB59B /* ASALightStormSticker.m in Sources */,
+				D575F33C17EDE16700DEB59B /* ASALightStormProfile+Tab.m in Sources */,
+				D575F34117EDE19700DEB59B /* ASALightStormProfile+Bookmark.m in Sources */,
+				D575F36517EDE2A800DEB59B /* ASALightStormTab.m in Sources */,
+				D575F38317EDE30E00DEB59B /* ASALightStormOfflineSnapshot.m in Sources */,
+				D575F36017EDE29C00DEB59B /* ASALightStormProxy.m in Sources */,
+				D575F37417EDE2CD00DEB59B /* ASALightStormWebPage.m in Sources */,
+				D575F35617EDE27F00DEB59B /* ASALightStormAdBlock.m in Sources */,
+				D575F32C17EDE0CA00DEB59B /* ASALightStormProfile+Proxy.m in Sources */,
+				D575F37917EDE2E300DEB59B /* ASALightStormUserData.m in Sources */,
+				D575F33717EDE15300DEB59B /* ASALightStormProfile+AdBlock.m in Sources */,
 				D5B958D317E74B580001441C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
