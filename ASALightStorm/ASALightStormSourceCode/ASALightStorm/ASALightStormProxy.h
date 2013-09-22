@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum {
+    
+    ASALightStormProxyHTTPType,
+    ASALightStormProxyHTTPSType,
+    ASALightStormProxySOCKSType
+    
+} ASALightStormProxyType;
+
+
 @interface ASALightStormProxy : NSObject
 
 @end

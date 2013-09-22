@@ -8,6 +8,24 @@
 
 #import <Foundation/Foundation.h>
 
+
+@class CDTab;
+@class ASALightStormProfile;
+@class ASALightStormWebPage;
+
+
+// implementation
+// documentation
+// tests
+
+
 @interface ASALightStormTab : NSObject
+
+@property (nonatomic, readonly) CDTab *tab;
+
+- (id)initWithProfile:(ASALightStormProfile *)profile;
+
+- (void)close;
+- (void)remove;
 
 @end

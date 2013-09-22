@@ -8,6 +8,27 @@
 
 #import "ASALightStormProfile.h"
 
+
+@class ASALightStormTab;
+
+
+// implementation
+// documentation
+// tests
+
+
 @interface ASALightStormProfile (Tab)
+
+- (ASALightStormTab *)createTab;
+
+- (void)closeAllTabs;
+
+- (void)removeAllTabs;
+- (void)removeAllOpenedTabs;
+
+- (void)reopenLastTabs:(NSUInteger)count;
+- (void)reopenLastTab;
+
+- (NSArray *)openedTabs;
 
 @end
