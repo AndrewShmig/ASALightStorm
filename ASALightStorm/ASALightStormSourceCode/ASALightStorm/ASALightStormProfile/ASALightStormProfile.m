@@ -45,7 +45,7 @@
     
     ASALightStormProfile *newProfile;
     
-    if (![ASALightStormProfile ASALS_existsProfileWithName:name]) {
+    if (nil != name && nil != password && ![ASALightStormProfile ASALS_existsProfileWithName:name]) {
         newProfile = [[ASALightStormProfile alloc]
                       initWithName:name
                       andPassword:password];
@@ -102,6 +102,7 @@
     if (nil != profile) {
         [[[ASALightStorm sharedStorm] stormManagedObjectContext]
          deleteObject:profile->_profileCD];
+        
         profile->_profileCD = nil;
     }
 }
@@ -124,8 +125,7 @@
     //    converting CDProfiles to ASALightStormProfiles
     NSMutableArray *lightStormProfiles = [NSMutableArray array];
     for (CDProfile *profile in profiles) {
-        ASALightStormProfile *convertedProfile = [[ASALightStormProfile alloc]
-                                                  init];
+        ASALightStormProfile *convertedProfile = [[ASALightStormProfile alloc] init];
         convertedProfile->_profileCD = profile;
         
         [lightStormProfiles addObject:convertedProfile];
@@ -162,10 +162,6 @@
         _profileCD.name = name;
         _profileCD.passwordHash = [password SHA512];
         _profileCD.createdAt = [NSDate date];
-        
-        if (![[ASALightStorm sharedStorm] saveStormManagedObjectContext]) {
-            return nil;
-        }
     }
     
     return self;

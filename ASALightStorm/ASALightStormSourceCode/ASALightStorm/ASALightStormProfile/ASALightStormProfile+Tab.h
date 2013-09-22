@@ -12,7 +12,6 @@
 @class ASALightStormTab;
 
 
-// implementation
 // documentation
 // tests
 

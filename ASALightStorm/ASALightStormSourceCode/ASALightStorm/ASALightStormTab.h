@@ -14,7 +14,7 @@
 @class ASALightStormWebPage;
 
 
-// implementation
+// implementation - add methods like loadWebPage, previousWebPage, nextWebPage etc
 // documentation
 // tests
 

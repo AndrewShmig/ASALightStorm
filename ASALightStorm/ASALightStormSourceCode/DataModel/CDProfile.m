@@ -2,11 +2,17 @@
 //  CDProfile.m
 //  ASALightStorm
 //
-//  Created by AndrewShmig on 9/14/13.
+//  Created by AndrewShmig on 9/22/13.
 //  Copyright (c) 2013 AndrewShmig. All rights reserved.
 //
 
 #import "CDProfile.h"
+#import "CDAdBlock.h"
+#import "CDBookmark.h"
+#import "CDDownload.h"
+#import "CDFilter.h"
+#import "CDProxy.h"
+#import "CDTab.h"
 
 
 @implementation CDProfile

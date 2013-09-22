@@ -2,13 +2,14 @@
 //  CDProfile.h
 //  ASALightStorm
 //
-//  Created by AndrewShmig on 9/14/13.
+//  Created by AndrewShmig on 9/22/13.
 //  Copyright (c) 2013 AndrewShmig. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@class CDAdBlock, CDBookmark, CDDownload, CDFilter, CDProxy, CDTab;
 
 @interface CDProfile : NSManagedObject
 
@@ -25,33 +26,33 @@
 
 @interface CDProfile (CoreDataGeneratedAccessors)
 
-- (void)addAdblocksObject:(NSManagedObject *)value;
-- (void)removeAdblocksObject:(NSManagedObject *)value;
+- (void)addAdblocksObject:(CDAdBlock *)value;
+- (void)removeAdblocksObject:(CDAdBlock *)value;
 - (void)addAdblocks:(NSSet *)values;
 - (void)removeAdblocks:(NSSet *)values;
 
-- (void)addBookmarksObject:(NSManagedObject *)value;
-- (void)removeBookmarksObject:(NSManagedObject *)value;
+- (void)addBookmarksObject:(CDBookmark *)value;
+- (void)removeBookmarksObject:(CDBookmark *)value;
 - (void)addBookmarks:(NSSet *)values;
 - (void)removeBookmarks:(NSSet *)values;
 
-- (void)addDownloadsObject:(NSManagedObject *)value;
-- (void)removeDownloadsObject:(NSManagedObject *)value;
+- (void)addDownloadsObject:(CDDownload *)value;
+- (void)removeDownloadsObject:(CDDownload *)value;
 - (void)addDownloads:(NSSet *)values;
 - (void)removeDownloads:(NSSet *)values;
 
-- (void)addFiltersObject:(NSManagedObject *)value;
-- (void)removeFiltersObject:(NSManagedObject *)value;
+- (void)addFiltersObject:(CDFilter *)value;
+- (void)removeFiltersObject:(CDFilter *)value;
 - (void)addFilters:(NSSet *)values;
 - (void)removeFilters:(NSSet *)values;
 
-- (void)addProxiesObject:(NSManagedObject *)value;
-- (void)removeProxiesObject:(NSManagedObject *)value;
+- (void)addProxiesObject:(CDProxy *)value;
+- (void)removeProxiesObject:(CDProxy *)value;
 - (void)addProxies:(NSSet *)values;
 - (void)removeProxies:(NSSet *)values;
 
-- (void)addTabsObject:(NSManagedObject *)value;
-- (void)removeTabsObject:(NSManagedObject *)value;
+- (void)addTabsObject:(CDTab *)value;
+- (void)removeTabsObject:(CDTab *)value;
 - (void)addTabs:(NSSet *)values;
 - (void)removeTabs:(NSSet *)values;
 
